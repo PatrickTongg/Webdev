@@ -1,0 +1,52 @@
+header {
+    padding: 0px;
+    background-color: #F8CF01;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    margin: 0px;
+}
+
+#logo {
+    font-family: Limelight;
+    color: #FFF;
+    margin: 1rem 3rem 1rem 2rem;
+}
+
+#search-button {
+    background-color: black;
+    color: #FFF;
+    width: 5rem;
+    height: 2rem;
+    margin: 1rem 0rem;
+}
+
+#search-text {
+    height: 1.8rem;
+    margin: 1rem 0rem;
+    padding: 0rem;
+}
+
+#search-categories {
+    height: 2rem;
+    margin: 1rem 0rem;
+}
+
+#login-btn {
+    height: 2rem;
+    align-self: flex-end;
+    background-color: black;
+    color: #FFF;
+    margin: 1rem 0rem;
+}
+
+.login {
+    margin: 0rem 2rem;
+}
+
+.header-left {
+    display: flex;
+}
