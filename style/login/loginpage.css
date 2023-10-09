@@ -1,0 +1,75 @@
+body{
+    background: #FFF4D1;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    font-family: 'Limelight', sans-serif;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.input{
+    width: 15rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: 3.125rem;
+    border: 1px solid #000;
+    background: #FFF;
+    color: #B3B3B3;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 2rem;
+    margin-top: 1rem;
+    }
+.submit{
+    width: 15rem;
+    height: 2rem;
+    flex-shrink: 0;
+    border-radius: 3.125rem;
+    background: #FFF;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+   
+}
+
+a{
+    color: #7392FF;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.forgotpasswork{
+    padding-left: 8rem;
+    margin-top: 0.2rem;
+}
+
+.loginby{
+    display: flex;
+    justify-content: space-around;
+    width: 10rem;
+    margin-top: 15%;
+    margin-bottom: 1%;
+}
+
+.signup{
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}

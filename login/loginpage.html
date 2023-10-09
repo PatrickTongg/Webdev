@@ -1,56 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/login/loginpage.css">
     <title>Document</title>
 </head>
 <body>
     <main>
-        <h>Revole</h>
+        
         <form action="/login.php" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" placeholder="Enter your username" required>
-            
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required>
-            
-            <button type="submit">Login</button>
+            <h1 class="logo">Revole</h1>
+            <input type="text" class="input"" name="username" placeholder="Username" required>
+            <input type="password" class="input"" name="password" placeholder="Password" required>
+            <a href="" class="forgotpasswork"> Forget Password</a>
+            <div class="loginby">
+                <a her=""><img src="/public/images/facebook-icon.png"></a>
+                <a her=""><img src="/public/images/google_icon.png"></a>
+                <a her=""><img src="/public/images/apple_icon.png"></a>
+            </div>
+            <button class="submit"type="submit">Login</button>
+            <a href="" class="signup"> Don’t have an account yet? SIGN UP</p>
         </form>
 
     </main>
-    <footer>
-        <section class="firstcolumn_location">
-            <ul>
-                <li>Revolve</li>
-                <li><a href="">About</a></li>
-                <li><a href="">Join Us</a></li>
-                <li><a href="">Member Benefits</a></li>
-                <li><a href="">on Revolve</a></li>
-            </ul>
-        </section>
-        <section class="secondcolumn_location">
-            <ul>
-                <li >Information</li>
-                <li><a href="">Term of Use</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Posting Policy</a></li>
-                <li><a href="">AdChoices</a></li>
-            </ul>
-        </section>
-        <section class="thirdcolumn_location">
-            <div class="row1_icon">
-                <img src="/public/images/playstore.png" alt="Play Store">
-                <img src="/public/images/apple-store.png" alt="apple-store">
-            </div>
-            <div class="row2_icon">
-                <img src="/public/images/Footer_FB.png" alt="facebook">
-                <img src="/public/images/footer_IG.png" alt="instangram">
-                <img src="/public/images/footer_twitter.png" alt="Twitter">
-            </div>
-        </section>
-    </footer>
-    
 </body>
 </html>
