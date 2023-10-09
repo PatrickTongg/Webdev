@@ -1,0 +1,44 @@
+footer{
+    color: #FFF;
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
+    background: #29282B;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem 0.2rem 1rem
+}
+
+footer section ul{
+    width: 8.125rem;
+    height: 9.375rem;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style-type: none;
+}
+
+footer section li{
+    padding-bottom: 1rem;
+}
+
+.icon_placing{
+    /* width: 2.75rem;
+    height: 2.80288rem;
+    flex-shrink: 0; */
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.firstcolumn_location{
+    width: 8.125rem;
+    height: 9.375rem;
+    flex-shrink: 0;
+    padding-right: 14.13rem
+}
+
