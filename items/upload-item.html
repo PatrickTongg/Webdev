@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Upload item</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style/upload-item.css">
+        <link rel="stylesheet" href="/style/header.css">
+        <link rel="stylesheet" href="/style/footer.css">
+
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Limelight">
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <h1 id="logo">Revolve</h1>
+                <form>
+                    <input id="search-text" type="text">
+                    <select name="categories" id="search-categories"> 
+                        <option value="all">All</option>
+                        <option value="electronics">Electronics</option>
+                    </select>
+                    <button id="search-button" type="button">Search</button>
+                </form>
+            </div>
+            <div class="login">
+                <button type="button" id="login-btn">Log in</button>
+            </div>
+        </header>
+        <main>
+            <!-- Recommended items -->
+            <h2 class="recommendations">
+                Recommended for you
+            </h2>
+            <div class="ad-container">
+                <div class="ad">
+                    <!-- Iphone ad -->
+                    <img class="ad-img" src="/public/images/iphone.png">
+                    <div class="ad-desc">
+                        <a href="item-page.html" class="ad-title">Apple iPhone 12 64 Gb Blue</a>
+                        <div class="ad-price">400$</div>
+                        <button type="submit" class="ad-contact">Contact seller</button>
+                    </div>
+                </div>  
+                <div class="ad">
+                    <!-- Pants ad -->
+                    <img class="ad-img" src="/public/images/pants.png">
+                    <div class="ad-desc">
+                        <a href="item-page.html" class="ad-title">Puma Men's Essentials Logo Joggers</a>
+                        <div class="ad-price">24$</div>
+                        <button type="submit" class="ad-contact">Contact seller</button>
+                    </div>
+                </div>  
+                <div class="ad">
+                    <!-- Laptop ad -->
+                    <img class="ad-img" src="/public/images/laptop.png">
+                    <div class="ad-desc">
+                        <a href="item-page.html" class="ad-title">Lenovo Legion 5 15.6" Gaming Laptop R7</a>
+                        <div class="ad-price">890$</div>
+                        <button type="submit" class="ad-contact">Contact seller</button>
+                    </div>
+                </div>  
+            </div>
+            <div class="section-desc">
+                <h2>Upload your item!</h2>
+            </div>
+            <!-- Fields with item description -->
+            <div class="dtl-fields">
+                <form class="dtl-form" action="/item-page/upload-item.php">
+                    <div class="dtl-left"></div>
+                    <div class="dtl-right"></div>
+                        <div class="row-label">Title:</div>
+                        <input type="text" id="item-title" class="item-input dtl-stdrt-input" name="item-title" placeholder="Title">
+                    
+                        <div class="row-label">Description:</div>
+                        <textarea rows="4" id="item-description" class="item-input" name="item-description" placeholder="Description"> </textarea>
+
+                        <div class="row-label">Condition:</div>
+                        <select name="conditions" id="item-condition" class="dtl-stdrt-input"> 
+                            <option value="brand-new">Brand-new</option>
+                            <option value="good">Good</option>
+                            <option value="bad">Bad</option>
+                        </select>  
+    
+                        <div class="row-label">Images:</div>
+                        <input type="file" class="" name="item-image">
+    
+                        <div class="row-label">Category:</div>
+                        <select name="categories" id="item-categories" class="dtl-stdrt-input"> 
+                            <option value="clothes">Clothes</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="cars">Cars</option>
+                            <option value="books">Books</option>
+                        </select>
+    
+                        <div class="row-label">Price:</div>
+                        <div>
+                            <input id="item-price" type="number" class="item-input dtl-stdrt-input" name="item-price">
+                            <span>$</span>
+                        </div>
+                        
+
+                        <div class="row-label">Location:</div>
+                        <textarea id="item-location" class="item-input dtl-stdrt-input" name="item-location" placeholder="205 Humber College Blvd" rows="3"></textarea>
+
+                        <div class="row-label">Contact number:</div>
+                        <input type="tel" class="item-input dtl-stdrt-input" name="item-contact" placeholder="+1(234)-567-8901">
+
+                    <button type="submit" id="upload-btn">Upload</button>
+                </form>               
+            </div>
+        </main>
+        <footer>
+            <section class="firstcolumn_location">
+                <ul>
+                    <li>Revolve</li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Member Benefits</a></li>
+                    <li><a href="">on Revolve</a></li>
+                </ul>
+            </section>
+            <section class="secondcolumn_location">
+                <ul>
+                    <li >Information</li>
+                    <li><a href="">Term of Use</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Posting Policy</a></li>
+                    <li><a href="">AdChoices</a></li>
+                </ul>
+            </section>
+            <section class="thirdcolumn_location">
+                <div class="row1_icon">
+                    <img src="/public/images/playstore.png" alt="Play Store">
+                    <img src="/public/images/apple-store.png" alt="apple-store">
+                </div>
+                <div class="row2_icon">
+                    <img src="/public/images/Footer_FB.png" alt="facebook">
+                    <img src="/public/images/footer_IG.png" alt="instangram">
+                    <img src="/public/images/footer_twitter.png" alt="Twitter">
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,153 @@
+main {
+    padding: 2rem;
+    background-color: #FFF4D1;
+}
+
+.dtl-fields {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 5rem 5rem;
+}
+
+.dtl-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 500px) {
+    .dtl-form {
+        width: 25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem 2rem
+    }
+
+    .row-label {
+        display: flex;
+        font-weight: normal;
+        grid-column: 2;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .dtl-form {
+        width: 25rem;
+        height: 40rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem 2rem
+    }
+
+    .row-label {
+        display: flex;
+        font-weight: normal;
+        grid-column: 2;
+    }
+}
+
+#item-description {
+    width: 15rem;
+    height: 5rem;
+    flex-shrink: 0;
+    padding: 1rem;
+    resize:none;
+    word-wrap: break-word;
+}
+
+#item-location {
+    resize: none;
+    width: 15rem;
+    padding: 1rem;
+}
+
+
+
+.item-input {
+    border-radius: 0.5rem;
+    border: 1px solid #000;
+    background: #FFF;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight:normal;
+    line-height: normal;
+    padding-left: 1rem;
+}
+
+#upload-btn {
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #000;
+    background-color: #29282B;
+    color: white;
+    grid-column: 2;
+}
+
+#item-title {
+    height: 2rem;
+}
+
+.dtl-stdrt-input {
+    height: 2rem;
+}
+
+.ad {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 1rem;
+    max-width: 15rem;
+}
+
+.ad-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.ad-price {
+    font-weight: bolder;
+}
+
+.ad-img {
+    height: 4rem;
+    padding-right: 1rem;
+}
+
+.ad-contact {
+    color: grey;
+}
+
+a.ad-contact:visited a.ad-contact:link {
+    color: grey;
+}
+
+a.ad-title:visited a.ad-title:link {
+    color: #000;
+    text-decoration: none;
+} 
+
+a.ad-title:hover {
+    text-decoration: underline;
+}
+
+.ad-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem 2rem;
+}
+
+.recommendations {
+    padding: 1rem 0rem;
+}
+
+#item-price {
+    text-align: end;
+}
