@@ -5,20 +5,67 @@ main{
     width:100%;
     grid-template-areas:
      "icon icon icon . ad"
-     "sold sold sold . ad"
-     "buy buy buy . ad"
+     "sold sold sold sold ad"
+     "buy buy buy buy ad"
      "detail detail . . ad"
      "detail detail . . ad";
      font-family: 'Libre Franklin', sans-serif;
-
+     font-weight: bold;
+     background-color: #FFF4D1;
 }
-aside{grid-area: ad;}
+/* .horizontalScroll{
+        width: 100px;
+        height: 3fr;
+        overflow-y: auto;
+        overflow-x: hidden;
+        transform: rotate(-90deg);
+        transform-origin: right top;
+} */
+aside{  grid-area: ad;
+        height: 900px;
+        background-color: white;
+        display:flex;
+        align-items : center;}
+
 
 #info{grid-area:icon;
-        display: flex;}
+        display: flex;
+        align-items: center;
+        font-size: large;
+        padding-left: 2rem;}
+#info ul{list-style-type: none;}
+.iconstandard{
+       width: 200px;
+       height: 200px; 
+}
+#buy{   grid-area: buy;
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.productImage{
+        width: 200px;
+        height: 200px;
+        /* transform: rotate(90deg);
+        transform-origin: right top; */
 
-#buy{grid-area:buy;}
+}
 
-#sell{grid-area: sold;}
+#sell{  grid-area: sold;
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;}
 
-#detail{ grid-area: detail;}
+
+#detail{ grid-area: detail;
+        padding-left: 2rem;
+        color:#29282B;}
+#detail ul{list-style-type: none;}
+#detail a:link { color: #29282B;
+                text-decoration: none;}
+#detail a:visited { color: #29282B;
+                text-decoration: none;}

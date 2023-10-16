@@ -7,9 +7,9 @@ footer{color: #FFF;
     justify-content: space-between;
     flex-grow:initial;
 }
-a:link { color: #FFF; }
+footer a:link { color: #FFF; }
 
-a:visited { color: #FFF; }
+footer a:visited { color: #FFF; }
 
 footer section ul{
     width: 8.125rem;
