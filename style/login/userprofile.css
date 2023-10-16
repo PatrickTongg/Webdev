@@ -13,19 +13,25 @@ main{
      font-weight: bold;
      background-color: #FFF4D1;
 }
-/* .horizontalScroll{
-        width: 100px;
-        height: 3fr;
-        overflow-y: auto;
-        overflow-x: hidden;
-        transform: rotate(-90deg);
-        transform-origin: right top;
-} */
+.horizontalScroll{
+        width: 100%;
+        padding-right: 2rem;
+        background-color: #FFF4D1;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 1rem;
+        .product {
+          flex: 0 0 auto;
+        }
+}
+
 aside{  grid-area: ad;
-        height: 900px;
+        height: 4fr;
         background-color: white;
         display:flex;
-        align-items : center;}
+        align-items : center;
+        justify-content: center;}
 
 
 #info{grid-area:icon;
@@ -34,7 +40,9 @@ aside{  grid-area: ad;
         font-size: large;
         padding-left: 2rem;}
 #info ul{list-style-type: none;}
-.iconstandard{
+#info li{padding-top: 0.6rem;}
+
+.icon_standard{
        width: 200px;
        height: 200px; 
 }
@@ -46,11 +54,26 @@ aside{  grid-area: ad;
         align-items: center;
 }
 .productImage{
-        width: 200px;
-        height: 200px;
-        /* transform: rotate(90deg);
-        transform-origin: right top; */
+        width: 15rem;
+        opacity: 1;
+}
 
+.product{
+        border: #29282B;
+        border-radius:1rem;
+        background-color :grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        text-decoration: none;
+        box-shadow: 2px 2px 8px black;
+}
+
+.productLink{color: aliceblue;
+        text-decoration: none;
+        padding: 0 2rem;
 }
 
 #sell{  grid-area: sold;
@@ -63,9 +86,29 @@ aside{  grid-area: ad;
 
 #detail{ grid-area: detail;
         padding-left: 2rem;
-        color:#29282B;}
+        color:#29282B;
+        font-size: large;}
 #detail ul{list-style-type: none;}
+#detail li{padding-top: 0.5rem;}
 #detail a:link { color: #29282B;
                 text-decoration: none;}
 #detail a:visited { color: #29282B;
                 text-decoration: none;}
+
+@media only screen and (max-width:800px){
+
+main{grid-template-areas:
+        "icon icon icon icon icon"
+        "sold sold sold sold sold"
+        "buy buy buy buy buy"
+        "detail detail  detail detail detail"
+        "detail detail  detail detail detail";
+        overflow: hidden;}
+        #info{padding-left: 1rem;}
+        #info ul{margin-left: -10%;
+                padding-left: 0px;}
+
+
+aside{  display: none;}
+}
+
