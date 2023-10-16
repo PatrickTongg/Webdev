@@ -1,0 +1,24 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:auto;
+    width:100%;
+    grid-template-areas:
+     "icon icon icon . ad"
+     "sold sold sold . ad"
+     "buy buy buy . ad"
+     "detail detail . . ad"
+     "detail detail . . ad";
+     font-family: 'Libre Franklin', sans-serif;
+
+}
+aside{grid-area: ad;}
+
+#info{grid-area:icon;
+        display: flex;}
+
+#buy{grid-area:buy;}
+
+#sell{grid-area: sold;}
+
+#detail{ grid-area: detail;}
