@@ -50,3 +50,41 @@ body {
 .header-left {
     display: flex;
 }
+
+nav ul{
+    background-color: #29282B;
+    color: aliceblue;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    list-style-type: none;
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 0;
+}
+nav a{
+    padding: 1em 2em ;
+    border-radius: 3rem;
+
+    
+}
+
+
+nav a:link {
+    text-decoration: none;
+}
+
+nav a:visited {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+    background-color: #F8CF01;
+}
+
+nav a:active {
+    text-decoration: none;
+}
+
