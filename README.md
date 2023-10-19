@@ -26,8 +26,10 @@ Vitaly
 [] - Iteam info
 [] - Upload Items
 Patrick
-[] - User information
-[] - Log in Page/ forget passwork
+[x] - User information
+[] - Log in Page
+[] - forget passwork
+[] - Sign UP
 [] - Easter Egg game tab
 Lindga
 [] - Home
