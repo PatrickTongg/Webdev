@@ -6,6 +6,8 @@ footer{color: #FFF;
     padding: 1rem 2rem 2rem 15%;
     justify-content: space-between;
     flex-grow:initial;
+    position:relative;
+    bottom:0px;
 }
 footer a:link { color: #FFF; }
 

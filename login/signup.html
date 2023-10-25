@@ -6,8 +6,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
+    <title>SignUp</title>\
+    <link rel="icon" type="image/x-icon" href="/public/images/R icon.png">
+    <link rel="stylesheet" href="/style/login/signup..css">
     <link rel="stylesheet" href="/style/footer.css">
     <link rel="stylesheet" href="/style/header.css">
 </head>
@@ -28,6 +29,39 @@
             <button type="button" id="login-btn">Log in</button>
         </div>
     </header>
+    <main>
+        <form method="post" action="" name="signUp" id="signUp">
+            <label for="username">Username: </label>
+            <input type="text" id="Fname" name="Fname" autofocus required>
+            <br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="emial" required>
+            <br>
+            <label for="pw">Password: </label>
+            <input type="password" id="pw" name="pw" required>
+            <br>
+            <label for="repw">Renter Password: </label>
+            <input type="password" id="repw" name="repw" required>
+            <p>Information below would not be diclose to other user</p>
+            <label for="phone">Phone number: </label>
+            <input type="tel" id="phone" name="phone" required>
+            <br>
+            <label for="Fname">First Name: </label>
+            <input type="text" id="Fname" name="Fname"required>
+            <br>
+            <label for="Lname">Last Name: </label>
+            <input type="text" id="Lname" name="Lname" required>
+            <br>
+            <label for="address">Address: </label>
+            <input type="text" id="address" name="address" required>
+            <br>
+            <label for="postalcode">PostalCode: </label>
+            <input type="text" id="postalcode" name="postalcode" required maxlength="6">
+            <br>
+            <input type="submit">
+        </form>
+        <aside><img class="aside_ad"src="/public/images/banner vertical.jpeg" alt="ads"></aside>
+    </main>
     <footer>
         <section class="firstcolumn_location">
             <ul>
