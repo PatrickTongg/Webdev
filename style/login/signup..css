@@ -1,13 +1,136 @@
+main{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color:#FFF4D1 ;
+    justify-content: center;
 
-main form{
-    margin: 2rem 2rem;
-    text-align:justify;
+}
+
+.background{
+    margin:2rem 2rem; 
+    padding: 2rem 2rem;
+    text-align:end;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
-    font-size:large;
+    font-size:x-large;
+    background-color: white;
+    border-radius: 2rem;
+    width:auto;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;}
+
+
+
+.boxlayout{
+width: 65%;
+height: 2.5rem;
+margin: 0.5rem 0;
+box-sizing: border-box;
+font-size:x-large;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+border: 1px solid #c5c5c6;
+border-radius: 4px;
+padding: 0 16px;
 }
-main{
-    display:flex;
-    justify-content: space-between;
-    background-color:#FFF4D1 ;
+
+#displayfeature{
+    width:30%;
 }
+
+input:required{
+    border-color: red;
+}
+
+input[type=submit]{
+    position: relative;
+    font-weight: 1000;
+    left: -25%;
+    height: 3rem;
+    background-color: black;
+    color: aliceblue;
+    margin-top: 4rem;
+}
+input[type=submit]:hover{
+    background-color: #FFF4D1 ;
+    color: black;
+    border:none;
+}
+
+.otherButton{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: transparent;
+    padding: 0; 
+    font-size:2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    border:none;
+}
+.otherButton:hover{
+    color: gray;
+}
+.logoSize{
+    font-size: 6rem;
+    margin: 0px;
+}
+.signinText{
+    text-align: center;
+}
+.description{
+    font-size: 2rem;
+}
+.descriptionImage{
+    height: 80%; 
+    width: 80%; 
+    object-fit:contain;
+    margin: 0 10%;
+}
+
+@media only screen and (max-width: 1500px ) {
+    .boxlayout{
+        width: 50%;}
+    .logoSize{
+            font-size: 3rem;
+        }
+    #signupArea{
+        font-size:20px;
+        }
+    #signupArea button{
+            font-size:25px;
+            }
+    #signupArea a{
+        font-size:20px  
+    }
+    .boxlayout{
+        font-size:20px
+    }
+    
+}
+@media only screen and (max-width: 900px ){
+    #displayfeature{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 500px ) {
+
+
+    #signupArea{
+        font-size:15px;
+        }
+    #signupArea button{
+            font-size:15px;
+            }
+    #signupArea a{
+        font-size:20px  
+    }
+    .boxlayout{
+        font-size:10px
+        height: 1rem;
+        margin: 0.2rem 0;   
+    }
+    
+}
+
+
