@@ -42,17 +42,24 @@ padding: 0 16px;
 input:required{
     border-color: red;
 }
-
-input[type=submit]{
-    position: relative;
+#accountdetail{
+    display: flex;
+    flex-direction: column;
+}
+.submitbox{
     font-weight: 1000;
-    left: -25%;
     height: 3rem;
+    width: 50%;
     background-color: black;
     color: aliceblue;
-    margin-top: 4rem;
+    margin-top: 4rem; 
+   
 }
-input[type=submit]:hover{
+.submitboxPosition{ 
+    justify-content: center;
+    display: flex;
+}
+.submitbox:hover{
     background-color: #FFF4D1 ;
     color: black;
     border:none;
@@ -128,7 +135,6 @@ input[type=submit]:hover{
     .boxlayout{
         font-size:10px;
         height: 1rem;
-        margin: 0.2rem 0;   
     }
     
 }
