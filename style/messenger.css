@@ -1,0 +1,149 @@
+.msg-info {
+    border: 1px solid black;
+    display: flex;
+    margin: 1rem;
+    width: 90%;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.msg-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 6rem;
+    font-weight: bold;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5rem;
+}
+
+.msg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-ph {
+    height: 7rem;
+    padding: 1rem;
+}
+
+.item-price {
+    color: green;
+}
+
+.delete {
+    height: 1rem;
+    margin-top: 1rem;
+
+}
+
+.delete-btn {
+    border: none;
+    background-color: white;
+}
+
+.delete-btn-img {
+    height: 2rem;
+}
+
+.msg {
+    margin-right: 1rem;
+}
+
+.main-header {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.msg-types {
+    padding: 1rem 3rem;
+    border: 1px solid grey;
+}
+
+div.main-header a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+div.main-header a:hover {
+    background-color: grey;
+}
+
+#active-msg {
+    background-color: gainsboro;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.ad {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 1rem;
+    max-width: 15rem;
+}
+
+.ad-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.ad-price {
+    font-weight: bolder;
+}
+
+.ad-img {
+    height: 4rem;
+    padding-right: 1rem;
+}
+
+.ad-contact {
+    color: grey;
+}
+
+a.ad-contact:visited a.ad-contact:link {
+    color: grey;
+}
+
+a.ad-title:visited a.ad-title:link {
+    color: #000;
+    text-decoration: none;
+} 
+
+a.ad-title:hover {
+    text-decoration: underline;
+}
+
+.ad-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2rem 2rem;
+    padding-right: 1rem;
+}
