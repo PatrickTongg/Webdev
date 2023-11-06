@@ -167,6 +167,7 @@ a.ad-title:hover {
 #msg-area {
     resize: none;
     padding: 1rem;
+    width: 80vw;
 }
 
 #snd-msg-btn {
