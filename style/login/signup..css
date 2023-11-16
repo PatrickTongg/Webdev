@@ -51,6 +51,8 @@ input:required{
     height: 3rem;
     width: 50%;
     background-color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
     color: aliceblue;
     margin-top: 4rem; 
    

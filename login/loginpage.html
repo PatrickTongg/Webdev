@@ -12,12 +12,11 @@
     
 </head>
 <body>
-    <main>
-        
+    <main></main>
         <form action="/login.php" method="post">
             <h1 class="logo">Revole</h1>
-            <input type="text" class="input"" name="username" id="username" placeholder="Username" required autofocus>
-            <input type="password" class="input"" name="password" id="username"  placeholder="Password" required>
+            <input type="text" class="input"" name="username" id="username" placeholder="Username" required autofocus><span></span>
+            <input type="password" class="input"" name="password" id="password"  placeholder="Password" required><span></span>
             <a href="" class="forgotpasswork"> Forget Password</a>
             <div class="loginby">
                 <a her=""><img src="/public/images/facebook-icon.png"></a>
@@ -27,7 +26,11 @@
             <button class="submit" type="submit">Login</button>
             <a href="/login/signup.html" class="signup"> Don’t have an account yet? SIGN UP</p>
         </form>
-
+        <script>
+            let uname = document.querySelector("#username")
+            let pw = document.querySelector("#password")
+            if (uname = ""){}
+        </script>
     </main>
 </body>
 </html>

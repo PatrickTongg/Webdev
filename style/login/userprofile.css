@@ -94,7 +94,9 @@ aside{  grid-area: ad;
                 text-decoration: none;}
 #detail a:visited { color: #29282B;
                 text-decoration: none;}
-
+.privacy:hover{ color: white;
+                }
+        
 @media only screen and (max-width:800px){
 
 main{grid-template-areas:
@@ -111,4 +113,3 @@ main{grid-template-areas:
 
 aside{  display: none;}
 }
-

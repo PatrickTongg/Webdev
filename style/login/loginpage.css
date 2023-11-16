@@ -22,13 +22,14 @@ form{
     border-radius: 3.125rem;
     border: 1px solid #000;
     background: #FFF;
-    color: #B3B3B3;
+    color: b;
     font-family: Inter;
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     padding-left: 2rem;
+    padding-right: 2rem;
     margin-top: 1rem;
     }
 .submit{
