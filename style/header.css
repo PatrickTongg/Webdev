@@ -91,3 +91,23 @@ nav a:active {
     text-decoration: none;
 }
 
+@media screen and (max-width: 600px ) {
+#logo{
+    margin: 1rem 1rem 1rem 1rem;
+}
+.header-left {
+    display:block;
+}
+#search-categories{
+    display:none;
+}
+.login{
+    margin: 0rem 0.75rem;
+}
+
+header{
+    justify-content: space-evenly;
+}
+
+
+}
