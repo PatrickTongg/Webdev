@@ -30,7 +30,7 @@ form{
     line-height: normal;
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     }
 .submit{
     width: 15rem;
@@ -73,4 +73,14 @@ a{
 .signup{
     margin-top: 1rem;
     font-size: 0.9rem;
+}
+
+span{
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: Inter;
+    margin-top:0.5rem;
+    padding-left:4rem;
+    
 }
