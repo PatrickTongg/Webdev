@@ -139,6 +139,12 @@
     padding: 1rem 5vw;
     border: 1px solid grey;
     text-align: center;
+    font-weight: bold;
+    background-color: white;
+}
+
+.msg-types:hover {
+    background-color: grey;
 }
 
 div.main-header a{
