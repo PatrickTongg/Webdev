@@ -59,6 +59,7 @@
         else if (pw.value != users.find(user => user.username === ac.value).password){
             ac.nextElementSibling.textContent = "";
             pw.nextElementSibling.textContent = "Wrong Password";
+            pw.nextElementSibling.style.color = "red";
             $("#password").style.borderColor= "red";
             $("#username").style.borderColor= "black";
             }
