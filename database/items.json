@@ -1,0 +1,82 @@
+[
+    {
+        "name":"IPhone 15 Pro Max",
+        "price":700,
+        "description":"IPHONE 7 PRO MAX. 128 GB\nBATTERY LIFE-99%\nUPGRADING TO 15 PRO\nCONDITION LIKE BRAND NEW\nUsed for 5 years\nReally good phone for personal use.",
+        "features":[
+            "Brand: Apple",
+            "Model: 7 PRO",
+            "Color: Black",
+            "Memory: 128GB"
+        ],
+        "images":["/public/images/iphones/iphone.png",
+        "/public/images/iphones/iphone1.png",
+        "/public/images/iphones/iphone2.jpeg",
+        "/public/images/iphones/iphone3.jpeg"]
+    },
+    {
+        "name":"Puma Men's Essentials Logo Joggers",
+        "price":24,
+        "description":"",
+        "features":[],
+        "images":[
+            "/public/images/pants.png"
+        ]
+    },
+    {
+        "name":"Lenovo Legion 5 15.6' Gaming Laptop R7",
+        "price":890,
+        "description":"",
+        "features":[],
+        "images":[
+            "/public/images/laptop.png"
+        ]
+    },
+    {
+        "name":"4DV4 Drone",
+        "price":109,
+        "description":"",
+        "features":[],
+        "images":[
+            "/public/images/quadcopter.jpg"
+        ]
+    },
+    {
+        "name":"RGBIC Floor Lamp",
+        "price":79.99,
+        "description":"",
+        "features":[],
+        "images":[
+            "/public/images/smartLamp.jpg"
+        ]
+    },
+    {
+        "name":"DREAM Snow Boots",
+        "price":48.99,
+        "description":"",
+        "features":[],
+        "images":[
+            "/public/images/dreamBoots.jpg"
+        ]
+    },
+    {
+        "name":"Peloton Bike+",
+        "price":2645,
+        "description":"",
+        "features":[],
+        "images":[
+            "/public/images/pelotonBike.jpg"
+        ]
+    },
+    {
+        "name":"DeLonghi Oil-Filled Radiator",
+        "price":103.99,
+        "description":"",
+        "features":[],
+        "images":[
+            "/public/images/radiator.jpg"
+        ]
+        
+    }
+]
+    

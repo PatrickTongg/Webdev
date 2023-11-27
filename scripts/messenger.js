@@ -1,7 +1,9 @@
+import { generateAd } from "./adGenerator.js";
 
 window.onload = () => {
     addEventsToDeleteBtns();
     addEventsToMsgTypes();
+    generateAd();
 }
 
 function removeMessage() {

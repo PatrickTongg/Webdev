@@ -3,7 +3,7 @@
 }
 
 #main-item-photo {
-    height: 30rem;
+    height: 30em;
 }
 
 .item-photo {
@@ -18,7 +18,7 @@
 }
 
 .side-item-photo {
-    height:10rem;
+    height:10em;
 }
 
 #side-photo1 {
@@ -50,11 +50,11 @@ pre {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-left: 7em;
+        margin-left: 7em;
     }
 
     .main-right {
-        padding-right: 10em;
+        margin-right: 10em;
     }
 }
 
