@@ -1,8 +1,6 @@
     const users = [{username:'patricktongg',password:'12345678'}]
     const $ = (selector) => document.querySelector(selector);
     
-   const $get=(selector) => document.getElementById(selector);
-    
     const $$ = (selector) => document.getElementById(selector);
 
     const rest =()=>{
@@ -73,5 +71,5 @@
 
     
     document.addEventListener('DOMContentLoaded', () => {
-        $get('submit').addEventListener('click', checkprocess);
+        document.querySelector('#submit').addEventListener('click', checkprocess);
           });
