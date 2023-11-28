@@ -161,11 +161,8 @@ function checkPostalCode(){
     }
 
 }
-
+//check signupform
 function checkform() {
-    //construct the const for the element of the form 
-    console.log('hi there');
-
     //checkform function
     var unameConfirm = checkuname();
     console.log(unameConfirm);
@@ -187,6 +184,7 @@ function checkform() {
         var uname =  $('#uname').value;
         console.log(s);
         window.localStorage.setItem(uname,s);
+        window.location="/login/loginpage.html";
     }
   
 
