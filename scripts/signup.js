@@ -182,34 +182,44 @@ function checkform() {
     var addressComfirm = checkContent('#address');
 
     if (unameConfirm && pwConfirm && repwConfirm  && phoneConfirm && postalCodeConfirm && fnameComfirm && lnameComfirm && addressComfirm){
-
-        location.href  = "/login/userprofile.html";
+        var name = {name: $('#uname').value, password: $('#pw').value, phone: $('#phone').value, postalCode: $('#postalcode').value, fname: $('#fname').value, lname: $('#lname').value,address: $('#address').value} 
+        var s = JSON.stringify(name);
+        var uname =  $('#uname').value;
+        console.log(s);
+        window.localStorage.setItem(uname,s);
     }
+  
 
 
 }
 //Slidshow
+$get("slide1").style.display = "none";
+$get("slide2").style.display = "none";
+$get("slide3").style.display = "none";
 let slideIndex = 0;
 showSlides();
 
 function showSlides() {
   let i;
-  let slides = $(".fadeSlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  let slides = document.getElementsByClassName("fadeSlide");
+  
+  for (i = 1; i < 4 ; i++) {
+    var n = "slide"+i;
+    $get(n).style.display = "none";
   }
+  if (slideIndex == 3) {slideIndex = 0}
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  console.log(slideIndex)
+  var index = "slide"+slideIndex;
+  $get(index).style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
-
-
 
 
 
 
 
 document.addEventListener('DOMContentLoaded', () => {
+    // document.getElementsByClassName("fadeSlide").style.display = "block";
     document.querySelector('#submit').addEventListener('click', checkform);
       });
