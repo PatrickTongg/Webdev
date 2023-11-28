@@ -1,8 +1,9 @@
-console.log('hi')
+
 const $ = (selector) => document.querySelector(selector);
 const $get =  (selector) => document.getElementById(selector);
 
-
+// Check if the sign up deatial is value
+// Check Username
 function checkuname (){
     var uname = $('#uname');
     if (uname.value  == ''){
@@ -36,7 +37,7 @@ function checkuname (){
 
     
 }
-
+// Check password
 function checkpassword(){
     var password = $('#pw');
     var reneterPassword =$('#repw');
@@ -69,7 +70,7 @@ function checkpassword(){
         password.nextElementSibling.textContent = ""
         return true;}
 } 
-
+// check reenter Password
 function checkRenterpw() {
     var password = $('#pw');
     var reneterPassword =$('#repw');
@@ -100,7 +101,7 @@ function checkRenterpw() {
     
 
 
-
+//check phone number
 function checktel() {
     var phone = $('#phone');
     if (phone.value  == ''){
@@ -122,7 +123,7 @@ function checktel() {
         return true; return true;
     }
 }
-
+//check content for name, address is filled
 function checkContent(selector) {
     var select = $(selector);
     if (select.value == "") {
@@ -136,7 +137,7 @@ function checkContent(selector) {
         return true;
     }
 }
-
+//check postal code
 function checkPostalCode(){
     var postalCode = $('#postalcode');
     if (postalCode.value.length!=6){
@@ -186,6 +187,21 @@ function checkform() {
     }
 
 
+}
+//Slidshow
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = $(".fadeSlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
 
