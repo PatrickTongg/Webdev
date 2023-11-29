@@ -199,15 +199,13 @@ showSlides();
 
 function showSlides() {
   let i;
-  let slides = document.getElementsByClassName("fadeSlide");
-  
+     
   for (i = 1; i < 4 ; i++) {
     var n = "slide"+i;
     $get(n).style.display = "none";
   }
   if (slideIndex == 3) {slideIndex = 0}
   slideIndex++;
-  console.log(slideIndex)
   var index = "slide"+slideIndex;
   $get(index).style.display = "block";
   setTimeout(showSlides, 5000); // Change image every 5 seconds
