@@ -185,6 +185,8 @@ div.main-header a:hover {
 .ad-img {
     height: 4rem;
     padding-right: 1rem;
+    aspect-ratio: 3/2;
+    object-fit: contain;
 }
 
 .ad-contact {
