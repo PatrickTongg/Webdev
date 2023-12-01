@@ -1,11 +1,21 @@
+    import items from '../database/items.json' assert { type: 'json' }; 
     const users = [{username:'patricktongg',password:'12345678'}]
-    const $ = (selector) => document.querySelector(selector);
-    
-    const $$ = (selector) => document.getElementById(selector);
 
-    const rest =()=>{
-        $('form').reset();
-    }
+    
+    const $ = (selector) => document.querySelector(selector);
+    const $$ = (selector) => document.getElementById(selector);
+    const rest =()=> $('form').reset();
+
+    //get items to local storage
+    let import_items= JSON.stringify(items);
+    localStorage.setItem("items",import_items);
+    console.log(import_items);
+    
+
+
+
+   
+    
     
     const checkprocess = () => {
         const pw = $('#password');
@@ -68,6 +78,7 @@
         }
         }
 
+    
 
     
     document.addEventListener('DOMContentLoaded', () => {
