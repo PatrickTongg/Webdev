@@ -54,8 +54,8 @@ aside{  grid-area: ad;
         align-items: center;
 }
 .productImage{
-        width: 15rem;
         opacity: 1;
+        max-height: 15rem;
 }
 
 .product{
@@ -69,6 +69,7 @@ aside{  grid-area: ad;
         color: aliceblue;
         text-decoration: none;
         box-shadow: 2px 2px 8px black;
+        height: 20rem;
 }
 
 .productLink{color: aliceblue;
