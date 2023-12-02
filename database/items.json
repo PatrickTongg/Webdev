@@ -1,5 +1,6 @@
 [
     {
+        "id":0,
         "name":"IPhone 15 Pro Max",
         "price":700,
         "description":"IPHONE 7 PRO MAX. 128 GB\nBATTERY LIFE-99%\nUPGRADING TO 15 PRO\nCONDITION LIKE BRAND NEW\nUsed for 5 years\nReally good phone for personal use.",
@@ -15,6 +16,7 @@
         "/public/images/iphones/iphone3.jpeg"]
     },
     {
+        "id":1,
         "name":"Puma Men's Essentials Logo Joggers",
         "price":24,
         "description":"",
@@ -24,6 +26,7 @@
         ]
     },
     {
+        "id":2,
         "name":"Lenovo Legion 5 15.6' Gaming Laptop R7",
         "price":890,
         "description":"",
@@ -33,6 +36,7 @@
         ]
     },
     {
+        "id":3,
         "name":"4DV4 Drone",
         "price":109,
         "description":"",
@@ -42,6 +46,7 @@
         ]
     },
     {
+        "id":4,
         "name":"RGBIC Floor Lamp",
         "price":79.99,
         "description":"",
@@ -51,6 +56,7 @@
         ]
     },
     {
+        "id":5,
         "name":"DREAM Snow Boots",
         "price":48.99,
         "description":"",
@@ -60,6 +66,7 @@
         ]
     },
     {
+        "id":6,
         "name":"Peloton Bike+",
         "price":2645,
         "description":"",
@@ -69,6 +76,7 @@
         ]
     },
     {
+        "id":7,
         "name":"DeLonghi Oil-Filled Radiator",
         "price":103.99,
         "description":"",

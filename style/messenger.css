@@ -91,6 +91,7 @@
     flex-direction: column;
     justify-content: space-between;
     font-weight: bold;
+    width: 10rem;
 }
 
 .item-info {
@@ -109,7 +110,9 @@
 }
 
 .item-ph {
-    padding: 1rem;
+    padding: 1rem 0rem;
+    aspect-ratio: 3/2;
+    object-fit: contain;
 }
 
 .item-price {
@@ -133,6 +136,7 @@
 
 .msg {
     margin-right: 1rem;
+    width: 13em;
 }
 
 .msg-types {
