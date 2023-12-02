@@ -1,5 +1,5 @@
-    import items from '../database/items.json' assert { type: 'json' }; 
-    const users = [{username:'patricktongg',password:'12345678'}]
+
+import items from '../database/items.json' assert { type: 'json' };
 
     
     const $ = (selector) => document.querySelector(selector);
@@ -10,8 +10,9 @@
     let import_items= JSON.stringify(items);
     localStorage.setItem("items",import_items);
     console.log(import_items);
-    
-
+    //get user data from local storage
+    const users = JSON.parse(window.localStorage.getItem('users'));
+    console.log(users);
 
 
    

@@ -1,4 +1,3 @@
-
 const $ = (selector) => document.querySelector(selector);
 const $get =  (selector) => document.getElementById(selector);
 
@@ -174,21 +173,31 @@ function checkform() {
     console.log(phoneConfirm)
     var postalCodeConfirm = checkPostalCode();
     console.log(postalCodeConfirm)
-    var fnameComfirm = checkContent('#fname');
-    var lnameComfirm = checkContent('#lname');
-    var addressComfirm = checkContent('#address');
+    var fnameConfirm = checkContent('#fname');
+    var lnameConfirm = checkContent('#lname');
+    var addressConfirm = checkContent('#address');
 
-    if (unameConfirm && pwConfirm && repwConfirm  && phoneConfirm && postalCodeConfirm && fnameComfirm && lnameComfirm && addressComfirm){
-        var name = {name: $('#uname').value, password: $('#pw').value, phone: $('#phone').value, postalCode: $('#postalcode').value, fname: $('#fname').value, lname: $('#lname').value,address: $('#address').value} 
-        var s = JSON.stringify(name);
-        var uname =  $('#uname').value;
-        console.log(s);
-        window.localStorage.setItem(uname,s);
-        window.location="/login/loginpage.html";
+
+
+    if (unameConfirm && pwConfirm && repwConfirm  && phoneConfirm && postalCodeConfirm && fnameConfirm && lnameConfirm && addressConfirm){
+        updateUserToLocalStorage();
     }
-  
+
+}
 
 
+function updateUserToLocalStorage(){
+    var userData = JSON.parse(window.localStorage.getItem('users'));
+    var user = {username: $('#uname').value, password: $('#pw').value, phone: $('#phone').value, postalCode: $('#postalcode').value, fname: $('#fname').value, lname: $('#lname').value,address: $('#address').value};
+    userData.push(user);
+    localStorage.setItem('users',JSON.stringify(userData));
+        }
+
+function checkLocalStorage(){
+    var userData = window.localStorage.getItem('users');
+    if (userData == null ){
+        localStorage.setItem('users',JSON.stringify([]));
+    }
 }
 //Slidshow
 $get("slide1").style.display = "none";
@@ -213,7 +222,7 @@ function showSlides() {
 
 
 
-
+window.onload = () => {checkLocalStorage()};
 
 document.addEventListener('DOMContentLoaded', () => {
     // document.getElementsByClassName("fadeSlide").style.display = "block";
