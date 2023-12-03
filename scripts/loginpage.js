@@ -75,8 +75,25 @@ import items from '../database/items.json' assert { type: 'json' };
         else {pwpass=true;}
 
         if (acpass&&pwpass){
+            sortLoginUserDataLocation();
             location.href  = "/login/userprofile.html";
         }
+        }
+
+
+        function sortLoginUserDataLocation(){
+            const ac = $('#username')
+            var users = JSON.parse(window.localStorage.getItem('users'));
+            console.log(users);
+            for (let user of users){
+                if (user.username == ac.value){
+                    let result = JSON.stringify(user)
+                    console.log(result)
+                    window.localStorage.setItem('LoginUser',result);
+
+                }
+            }
+
         }
 
     

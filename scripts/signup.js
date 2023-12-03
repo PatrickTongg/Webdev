@@ -1,6 +1,12 @@
 const $ = (selector) => document.querySelector(selector);
 const $get =  (selector) => document.getElementById(selector);
-
+//update JSON file to local storage
+function updateUserToLocalStorage(){
+    var userData = JSON.parse(window.localStorage.getItem('users'));
+    var user = {username: $('#uname').value, password: $('#pw').value, phone: $('#phone').value, postalCode: $('#postalcode').value, fname: $('#fname').value, lname: $('#lname').value,address: $('#address').value};
+    userData.push(user);
+    localStorage.setItem('users',JSON.stringify(userData));
+        }
 // Check if the sign up deatial is value
 // Check Username
 function checkuname (){
@@ -35,6 +41,13 @@ function checkuname (){
     }
 
     
+}
+
+function checkLocalStorage(){
+    var userData = window.localStorage.getItem('users');
+    if (userData == null ){
+        localStorage.setItem('users',JSON.stringify([]));
+    }
 }
 // Check password
 function checkpassword(){
@@ -186,19 +199,6 @@ function checkform() {
 }
 
 
-function updateUserToLocalStorage(){
-    var userData = JSON.parse(window.localStorage.getItem('users'));
-    var user = {username: $('#uname').value, password: $('#pw').value, phone: $('#phone').value, postalCode: $('#postalcode').value, fname: $('#fname').value, lname: $('#lname').value,address: $('#address').value};
-    userData.push(user);
-    localStorage.setItem('users',JSON.stringify(userData));
-        }
-
-function checkLocalStorage(){
-    var userData = window.localStorage.getItem('users');
-    if (userData == null ){
-        localStorage.setItem('users',JSON.stringify([]));
-    }
-}
 //Slidshow
 $get("slide1").style.display = "none";
 $get("slide2").style.display = "none";
