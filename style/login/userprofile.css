@@ -5,10 +5,10 @@ main{
     width:100%;
     grid-template-areas:
      "icon icon icon . ad"
+     "detail detail detail . ad"
+     "detail detail detail . ad"
      "sold sold sold sold ad"
-     "buy buy buy buy ad"
-     "detail detail . . ad"
-     "detail detail . . ad";
+     "buy buy buy buy ad";
      font-family: 'Libre Franklin', sans-serif;
      font-weight: bold;
      background-color: #FFF4D1;

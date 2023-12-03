@@ -27,6 +27,10 @@ function createBuyItemList(){
 }
 //create html for the personal info
 function createInfo(){
+    var userInfo = $$('Userinfo')
+    var LoginUser = JSON.stringify(window.localStorage.getItem('LoginUser'))
+    let userinfoHTML = ''
+    userinfoHTML = ' <img class="icon_standard" src="/public/images/profile_pic.png"alt="profile picture"><div><ul><li>User Name: Patricktongg </li><li>Phone Number: +1 (289) 928-4935</li></ul></div>'
 
 
 }
