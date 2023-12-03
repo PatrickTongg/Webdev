@@ -3,7 +3,7 @@ const $get =  (selector) => document.getElementById(selector);
 //update JSON file to local storage
 function updateUserToLocalStorage(){
     var userData = JSON.parse(window.localStorage.getItem('users'));
-    var user = {username: $('#uname').value, password: $('#pw').value, phone: $('#phone').value, postalCode: $('#postalcode').value, fname: $('#fname').value, lname: $('#lname').value,address: $('#address').value};
+    var user = {username: $('#uname').value, password: $('#pw').value, phone: $('#phone').value, postalCode: $('#postalcode').value, fname: $('#fname').value, lname: $('#lname').value,address: $('#address').value,email: $('#email').value};
     userData.push(user);
     localStorage.setItem('users',JSON.stringify(userData));
         }
@@ -189,11 +189,14 @@ function checkform() {
     var fnameConfirm = checkContent('#fname');
     var lnameConfirm = checkContent('#lname');
     var addressConfirm = checkContent('#address');
+    var addressConfirm = checkContent('#email');
 
 
 
     if (unameConfirm && pwConfirm && repwConfirm  && phoneConfirm && postalCodeConfirm && fnameConfirm && lnameConfirm && addressConfirm){
         updateUserToLocalStorage();
+        window.location = '/login/loginpage.html';
+
     }
 
 }
@@ -225,6 +228,5 @@ function showSlides() {
 window.onload = () => {checkLocalStorage()};
 
 document.addEventListener('DOMContentLoaded', () => {
-    // document.getElementsByClassName("fadeSlide").style.display = "block";
-    document.querySelector('#submit').addEventListener('click', checkform);
+        document.querySelector('#submit').addEventListener('click', checkform);
       });

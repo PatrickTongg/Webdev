@@ -4,10 +4,11 @@ main{
     grid-template-rows:auto;
     width:100%;
     grid-template-areas:
-     "icon icon icon . ad"
-     "detail detail detail . ad"
-     "detail detail detail . ad"
+    "info info info . ad"
+    "detail detail detail . ad"
+    "detail detail detail . ad"
      "sold sold sold sold ad"
+     "buy buy buy buy ad"
      "buy buy buy buy ad";
      font-family: 'Libre Franklin', sans-serif;
      font-weight: bold;
@@ -34,7 +35,7 @@ aside{  grid-area: ad;
         justify-content: center;}
 
 
-#info{grid-area:icon;
+#info{grid-area:info;
         display: flex;
         align-items: center;
         font-size: large;
@@ -101,11 +102,11 @@ aside{  grid-area: ad;
 @media only screen and (max-width:800px){
 
 main{grid-template-areas:
-        "icon icon icon icon icon"
-        "sold sold sold sold sold"
-        "buy buy buy buy buy"
+        "info info info info info"
         "detail detail  detail detail detail"
-        "detail detail  detail detail detail";
+        "detail detail  detail detail detail"
+        "sold sold sold sold sold"
+        "buy buy buy buy buy";
         overflow: hidden;}
         #info{padding-left: 1rem;}
         #info ul{margin-left: -10%;

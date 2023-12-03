@@ -84,7 +84,6 @@ import items from '../database/items.json' assert { type: 'json' };
         function sortLoginUserDataLocation(){
             const ac = $('#username')
             var users = JSON.parse(window.localStorage.getItem('users'));
-            console.log(users);
             for (let user of users){
                 if (user.username == ac.value){
                     let result = JSON.stringify(user)

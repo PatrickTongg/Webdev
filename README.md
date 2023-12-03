@@ -22,19 +22,17 @@ font-family: Libre Franklin;
 
 #Job Allocaiton 12/10
 Vitaly
-[] - Message Center
-[] - Iteam info
+[x] - Message Center
+[x] - Iteam info 
 [] - Upload Items
 Patrick
 [x] - User information
-[] - Log in Page
-[] - forget passwork
-[] - Sign UP
-[] - Easter Egg game tab
+[x] - Log in Page
+[x] - Sign UP
 Lindga
-[] - Home
-[] - questionarrie answer
-[] - catoegory items
+[x] - Home
+[x] - About us
+[x] - catoegory items
 Pravo
 [] - user list page
 [] - feedback page
