@@ -3,7 +3,15 @@ const $get =  (selector) => document.getElementById(selector);
 //update JSON file to local storage
 function updateUserToLocalStorage(){
     var userData = JSON.parse(window.localStorage.getItem('users'));
-    var user = {username: $('#uname').value, password: $('#pw').value, phone: $('#phone').value, postalCode: $('#postalcode').value, fname: $('#fname').value, lname: $('#lname').value,address: $('#address').value,email: $('#email').value};
+    var user = {
+        username: $('#uname').value, 
+        password: $('#pw').value, 
+        phone: $('#phone').value, 
+        postalCode: $('#postalCode').value, 
+        fname: $('#fname').value, 
+        lname: $('#lname').value,
+        address: $('#address').value,
+        email: $('#email').value};
     userData.push(user);
     localStorage.setItem('users',JSON.stringify(userData));
         }
@@ -151,7 +159,7 @@ function checkContent(selector) {
 }
 //check postal code
 function checkPostalCode(){
-    var postalCode = $('#postalcode');
+    var postalCode = $('#postalCode');
     if (postalCode.value.length!=6){
         postalCode.nextElementSibling.textContent = "Please Enter A Valid Postal Code"
         postalCode.value = "";

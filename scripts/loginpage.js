@@ -18,11 +18,11 @@ import items from '../database/items.json' assert { type: 'json' };
    
     
     
-    const checkprocess = () => {
+    const checkProcess = () => {
         const pw = $('#password');
         const ac = $('#username')
-        let acpass = false
-        let pwpass = false
+        let acPass = false
+        let pwPass = false
 
         if (ac.value  == ''){
             ac.nextElementSibling.textContent = "User Name is empty";
@@ -50,7 +50,7 @@ import items from '../database/items.json' assert { type: 'json' };
             $("#password").style.borderColor= "red";
             rest();
             return;}
-        else {acpass=true;}
+        else {acPass=true;}
         
 
         if (pw.value == ''){
@@ -72,9 +72,9 @@ import items from '../database/items.json' assert { type: 'json' };
             $("#password").style.borderColor= "red";
             $("#username").style.borderColor= "black";
             }
-        else {pwpass=true;}
+        else {pwPass=true;}
 
-        if (acpass&&pwpass){
+        if (acPass&&pwPass){
             sortLoginUserDataLocation();
             location.href  = "/login/userprofile.html";
         }
@@ -99,5 +99,5 @@ import items from '../database/items.json' assert { type: 'json' };
 
     
     document.addEventListener('DOMContentLoaded', () => {
-        document.querySelector('#submit').addEventListener('click', checkprocess);
+        document.querySelector('#submit').addEventListener('click', checkProcess);
           });
