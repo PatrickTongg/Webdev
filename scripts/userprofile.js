@@ -39,7 +39,7 @@ function createInfo(){
                         '</li><li>Postal Code:'+LoginUser.postalCode+
                         '</li><li>Full Name: '+LoginUser.fname+' '+LoginUser.lname+
                         '</li><li>Email: '+LoginUser.email+
-                        '</li><li><input type="button" id="editDetail" class="privacy" value="Edit Details" ></li></ul>'
+                        '</li><li><input type="button" id="editDetail" class="editProfileButton" value="Edit Details" ></li></ul>'
     
     userInfo.innerHTML = userInfoHTML;
     userDetail.innerHTML = userDetailHTML;
@@ -52,12 +52,12 @@ function enableEdit(){
     var LoginUser = JSON.parse(window.localStorage.getItem('LoginUser'));
     var editFormHTML = '';
     editFormHTML=
-    ' <h1>Personal Details</h1><form><ul><li><label for="address">Address:</label><input type="text" id="address" value="'+LoginUser.address+
-    ' " required></li><li><label for="postalCode">Postal Code:</label><input type="text" id="postalCode" value="'+LoginUser.postalCode+
-    '" max="6" required ></li><li><label for="fname">First Name: </label><input type="text" id="fname" value="'+LoginUser.fname+
-    '" required></li><li><label for="lname">Last Name: </label><input type="text" id="lname" value="'+LoginUser.lname+
-    '"required></li><li>Email: <input type="text" id="email" value="'+LoginUser.email+
-    '" required ></li><li> <input type="button" id="done" class="privacy" value="Done" onclick="doneEdit()"></ul></form>'
+    ' <h1>Personal Details</h1><form><ul><li><label for="address">Address:</label><input type="text" id="address" class="updateInput" value="'+LoginUser.address+
+    ' " required></li><li><label for="postalCode">Postal Code:</label><input type="text" id="postalCode" class="updateInput" value="'+LoginUser.postalCode+
+    '" max="6" required ></li><li><label for="fname">First Name: </label><input type="text" id="fname"  class="updateInput"value="'+LoginUser.fname+
+    '" required></li><li><label for="lname">Last Name: </label><input type="text" id="lname" class="updateInput" value="'+LoginUser.lname+
+    '"required></li><li>Email: <input type="text" id="email" class="updateInput" value="'+LoginUser.email+
+    '" required ></li><li> <input type="button" id="done" class="editProfileButton" value="Done" onclick="doneEdit()"></ul></form>'
     userDetail.innerHTML = editFormHTML;
     }
 function doneEdit(){

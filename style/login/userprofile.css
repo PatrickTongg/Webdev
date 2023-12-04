@@ -9,11 +9,13 @@ main{
     "detail detail detail . ad"
      "sold sold sold sold ad"
      "buy buy buy buy ad"
-     "buy buy buy buy ad";
+     "buy buy buy buy ad"
+     "button button button button ad";
      font-family: 'Libre Franklin', sans-serif;
      font-weight: bold;
      background-color: #FFF4D1;
 }
+
 .horizontalScroll{
         width: 100%;
         padding-right: 2rem;
@@ -24,8 +26,10 @@ main{
         gap: 1rem;
         .product {
           flex: 0 0 auto;
+          
         }
 }
+
 
 aside{  grid-area: ad;
         height: 4fr;
@@ -33,12 +37,11 @@ aside{  grid-area: ad;
         display:flex;
         align-items : center;
         justify-content: center;}
-
-
+/*information Tab*/
 #info{grid-area:info;
         display: flex;
         align-items: center;
-        font-size: large;
+        font-size: x-large;
         padding-left: 2rem;}
 #info ul{list-style-type: none;}
 #info li{padding-top: 0.6rem;}
@@ -89,16 +92,59 @@ aside{  grid-area: ad;
 #detail{ grid-area: detail;
         padding-left: 2rem;
         color:#29282B;
-        font-size: large;}
+        font-size: x-large;}
 #detail ul{list-style-type: none;}
 #detail li{padding-top: 0.5rem;}
 #detail a:link { color: #29282B;
                 text-decoration: none;}
 #detail a:visited { color: #29282B;
                 text-decoration: none;}
-.privacy:hover{ color: white;
-                }
+.editProfileButton{
+        font-weight: 1000;
+        height: 3rem;
+        width: 15rem;
+        background-color: black;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:x-large;
+        color: aliceblue;
+        margin-top: 4rem; 
+        margin: 1rem auto;
+        justify-content: center;
+        border-radius: 1rem;
+}
+.editProfileButton:hover{ 
+        box-shadow: 0.3rem 0.5rem 0.5rem grey ;
+
+}
+.updateInput{
+        font-size: large;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        height: 1.5rem;
+        margin-left: 0.5rem;
+        font-weight: 600;
+        width: 40%;
+        background-color: #FFF4D1;
         
+        }
+#linkToUploadItem{
+        grid-area:button;
+        font-weight: 1000;
+        height: 4rem;
+        width: 70%;
+        background-color: black;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:x-large;
+        color: aliceblue;
+        margin-top: 4rem; 
+        margin: 1rem auto;
+        justify-content: center;
+        border-radius: 1rem;
+}
+#linkToUploadItem:hover{
+        background-color: white ;
+        color: black;
+        border:none;
+    } 
 @media only screen and (max-width:800px){
 
 main{grid-template-areas:
@@ -106,7 +152,8 @@ main{grid-template-areas:
         "detail detail  detail detail detail"
         "detail detail  detail detail detail"
         "sold sold sold sold sold"
-        "buy buy buy buy buy";
+        "buy buy buy buy buy"
+        "button button button button button";
         overflow: hidden;}
         #info{padding-left: 1rem;}
         #info ul{margin-left: -10%;
