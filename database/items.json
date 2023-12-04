@@ -19,8 +19,10 @@
         "id":1,
         "name":"Puma Men's Essentials Logo Joggers",
         "price":24,
-        "description":"",
-        "features":[],
+        "description":"Comfortbale. Stylish. All the makings of a wardrobe staple. The Essenitals Logo Men's Pants are essential for a reason",
+        "features":[
+            "Size: S, M, L, XL"
+        ],
         "images":[
             "/public/images/pants.png"
         ]
@@ -29,8 +31,13 @@
         "id":2,
         "name":"Lenovo Legion 5 15.6' Gaming Laptop R7",
         "price":890,
-        "description":"",
-        "features":[],
+        "description":"Welcome to the next generation of gaming performance with the AMD Ryzen 7 4800H mobile processor, 16GB 3200MHz DDR4 memory, and 512GB M.2 NVMe PCIe SSD storage",
+        "features":[
+            "Nahimic 3D Audio",
+            "Legion Spectrum RGB support",
+            "16 GB DDR5 4800MHz",
+            "Windows 11 Home"
+        ],
         "images":[
             "/public/images/laptop.png"
         ]
@@ -39,8 +46,13 @@
         "id":3,
         "name":"4DV4 Drone",
         "price":109,
-        "description":"",
-        "features":[],
+        "description":"HD pictures & Videos and FPV Function:120°Wide-angle 1080P HD Camera including adjustable angle, which captures high-quality video and clear aerial photos.you can see what your drone sees from smartphone, enjoy a live video feed up from 80m away with FPV transmission",
+        "features":[
+            "Brand: DRONEEYE",
+            "Model: 4DV4",
+            "Color: Black",
+            "Video resolution: 1080p"
+        ],
         "images":[
             "/public/images/quadcopter.jpg"
         ]
@@ -49,8 +61,13 @@
         "id":4,
         "name":"RGBIC Floor Lamp",
         "price":79.99,
-        "description":"",
-        "features":[],
+        "description":"Unleash your creativity with Govee RGBIC technology, you can customize each segment color base on nature, festival and emotions, and the strips of our smart floor lamp will display animated multicolor effects simultaneously",
+        "features":[
+            "Brand: Govee",
+            "Light source type: LED",
+            "Color: Black",
+            "Customizable Lighting"
+        ],
         "images":[
             "/public/images/smartLamp.jpg"
         ]
@@ -59,8 +76,11 @@
         "id":5,
         "name":"DREAM Snow Boots",
         "price":48.99,
-        "description":"",
-        "features":[],
+        "description":"The soft faux fur lining ging all the way through the snow boots provides fluffy fuzzy comfortable feeling for your feet and keep a toasty warm from toes to calves in cold weather",
+        "features":[
+            "Size: 7 US, 8 US, 9 US, 10 US",
+            "Color: Black"
+        ],
         "images":[
             "/public/images/dreamBoots.jpg"
         ]
@@ -69,8 +89,13 @@
         "id":6,
         "name":"Peloton Bike+",
         "price":2645,
-        "description":"",
-        "features":[],
+        "description":"The Bike+ package is extremely heavy and might require more than one person to lift or carry. Lifting heavy objects can cause muscle strain and back injuries. Heavy objects can also fall and cause injury and physical damage. Use lifting aids and proper lifting techniques when moving or assembling the Peloton Bike+",
+        "features":[
+            "Brand: Govee",
+            "Light source type: LED",
+            "Color: Black",
+            "Customizable Lighting"
+        ],
         "images":[
             "/public/images/pelotonBike.jpg"
         ]
@@ -79,8 +104,13 @@
         "id":7,
         "name":"DeLonghi Oil-Filled Radiator",
         "price":103.99,
-        "description":"",
-        "features":[],
+        "description":"A quiet solution to heating, with breezless heat that offers a constant warm feel",
+        "features":[
+            "Brand: Senville",
+            "Noiseless",
+            "Color: Black",
+            "Form factor: Pedestal"
+        ],
         "images":[
             "/public/images/radiator.jpg"
         ]

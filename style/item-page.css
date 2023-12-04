@@ -4,6 +4,8 @@
 
 #main-item-photo {
     height: 30em;
+    max-width: 20em;
+    /* 239x480 */
 }
 
 .item-photo {
@@ -31,6 +33,10 @@
 
 #side-photo3 {
     grid-area: "side-photo3";
+}
+
+#description {
+    max-width: 50em;
 }
 
 pre {
@@ -141,6 +147,7 @@ pre {
 .ad-desc {
     display: flex;
     flex-direction: column;
+    width: 10em;
 }
 
 .ad-price {

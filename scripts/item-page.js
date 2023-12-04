@@ -7,7 +7,20 @@ window.onload = () => {
 }
 
 function loadItem() {
-    let primaryItem = items[0];
+    let itemId = localStorage.getItem("currentItem");
+    let primaryItem = null;
+    if (itemId == null) {
+        primaryItem = items[0];
+    } else {
+        let allItems = JSON.parse(localStorage.getItem("items"));
+        primaryItem = allItems.filter(item => item.id == itemId)[0];
+    }
+
+    let itemName = document.getElementById("item-name");
+    itemName.innerHTML = primaryItem.name;
+
+    let itemPrice = document.getElementById("price");
+    itemPrice.innerHTML = primaryItem.price + "$";
 
     let photoContainer = document.getElementsByClassName("item-photo")[0];
     let imageContent = "";

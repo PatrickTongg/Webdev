@@ -180,6 +180,7 @@ div.main-header a:hover {
 .ad-desc {
     display: flex;
     flex-direction: column;
+    width: 10em;
 }
 
 .ad-price {
