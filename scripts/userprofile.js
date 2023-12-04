@@ -85,9 +85,8 @@ function doneEdit(){
         }
     }
 //select save selected items
-function saveSelectedItems{
-    let id = 
-    let items = JSON.parse(localStorage.getItem("items"));
+function saveSelectedItems(){
+    let id = this.id;
     let index = 0;
     for (let i = 0; i < items.length; i++) {
         if(items[i].id == id) {
@@ -95,8 +94,13 @@ function saveSelectedItems{
             break;
         }
     }
-    items.splice(index, 1); 
-    window.localStorage.setItem('currentItem',JSON.stringify(result));
+    window.localStorage.setItem('currentItem',JSON.stringify(index));
+}
+function addEventsToSeeItem() {
+    let selectProduct = document.getElementsByClassName("product");
+    for(let i = 0; i < selectProduct.length; i++) {
+        selectProduct[i].addEventListener("click", saveSelectedItems);
+    }
 }
 
 //add function as onload and addlistener
@@ -104,6 +108,7 @@ window.onload = () => {
     createSoldItemList()
     createBuyItemList()
     createInfo()
+    addEventsToSeeItem()
     $("#editDetail").addEventListener("click", enableEdit);
     // $$("done").addEventListener("click", doneEdit, false);
 }

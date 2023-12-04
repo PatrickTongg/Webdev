@@ -11,6 +11,10 @@ import items from '../database/items.json' assert { type: 'json' };
     localStorage.setItem("items",import_items);
     console.log(import_items);
     //get user data from local storage
+    if (localStorage.getItem("users") === null) {
+        let result = []
+        window.localStorage.setItem('users',JSON.stringify(result))
+    }
     const users = JSON.parse(window.localStorage.getItem('users'));
     console.log(users);
 
