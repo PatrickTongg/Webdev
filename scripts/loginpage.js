@@ -33,7 +33,7 @@ import items from '../database/items.json' assert { type: 'json' };
             rest();
             return;
             }
-        else if (ac.value.length<8){
+        else if (ac.value.length<5){
             ac.nextElementSibling.textContent = "UserName too short";
             pw.nextElementSibling.textContent = "";
             ac.nextElementSibling.style.color = "red";

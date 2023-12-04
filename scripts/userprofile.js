@@ -84,6 +84,20 @@ function doneEdit(){
             }
         }
     }
+//select save selected items
+function saveSelectedItems{
+    let id = 
+    let items = JSON.parse(localStorage.getItem("items"));
+    let index = 0;
+    for (let i = 0; i < items.length; i++) {
+        if(items[i].id == id) {
+            index = i;
+            break;
+        }
+    }
+    items.splice(index, 1); 
+    window.localStorage.setItem('currentItem',JSON.stringify(result));
+}
 
 //add function as onload and addlistener
 window.onload = () => {
