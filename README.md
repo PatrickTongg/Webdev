@@ -1,22 +1,7 @@
 # Webdev
 ITC 5103 project
-[x]-Footer
-[x]-header
-[x]-textstyle folder
-[x]-Main login page
-
-
-Theme Color: 
-#F8CF01, 
-#FFF4D1, 
-#29282B
-
 Web Name: Revolve
-Logo colour 
-font-family: Limelight;
-
-content font 
-font-family: Libre Franklin;
+Introduction: It is a project that disaplay a demo of a online trading platform, 
 
 
 
@@ -26,9 +11,7 @@ Vitaly
 [x] - Iteam info 
 [] - Upload Items
 Patrick
-[x] - User information
-[x] - Log in Page
-[x] - Sign UP
+
 Lindga
 [x] - Home
 [x] - About us

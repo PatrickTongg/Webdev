@@ -42,7 +42,7 @@ body {
     color: #FFF;
     margin: 1rem 0rem;
 }
-#user-icon{
+.topIcon{
     width: 2rem;
     height: 2rem;
 }

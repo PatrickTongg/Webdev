@@ -131,7 +131,7 @@ function checktel() {
         return false ;
         }
     else if (phone.value.length <10){
-        phone.nextElementSibling,textcontent = 'Please enter a least 10 digit';
+        phone.nextElementSibling.textContent = 'Please enter a least 10 digit';
         phone.nextElementSibling.style.color ="red";
         phone.value = "";
         phone.style.borderColor="red";

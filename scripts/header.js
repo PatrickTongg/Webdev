@@ -10,8 +10,10 @@ function changeToUserLogo(){
     console.log(user.username)
     if (user.username!=null){
         console.log(document.querySelector("#login-link").innerHTML);
-        let result ='<a href="/login/userprofile.html">';
-        result +='<img id="user-icon" src="/public/images/user-icon.png" alt="user"></a>';
+
+        let result ='<a href="/homepage/homepage.html"><img id="logoutIcon" class="topIcon" "src="/public/images/user-icon.png" alt="logout"></a>';
+        result +='<a href="/login/userprofile.html">';
+        result +='<img id="user-icon" class="topIcon"  src="/public/images/user-icon.png" alt="user"></a>';
         document.getElementById("login-link").innerHTML=result;
     } 
 }
