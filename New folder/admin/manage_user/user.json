@@ -1,0 +1,44 @@
+{
+  "customers": [
+    {
+      "name": "John Doe",
+      "profile_pic": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "Jane Smith",
+      "profile_pic": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "Alice Johnson",
+      "profile_pic": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "Michael Brown",
+      "profile_pic": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "Emily Davis",
+      "profile_pic": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "William Wilson",
+      "profile_pic": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "Olivia Lee",
+      "profile_pic": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "Daniel Taylor",
+      "profile_pic": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "Sophia Martinez",
+      "profile_pic": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "Matthew Anderson",
+      "profile_pic": "https://via.placeholder.com/150"
+    }
+  ]
+}
