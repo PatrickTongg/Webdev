@@ -87,14 +87,7 @@ function doneEdit(){
 //select save selected items
 function saveSelectedItems(){
     let id = this.id;
-    let index = 0;
-    for (let i = 0; i < items.length; i++) {
-        if(items[i].id == id) {
-            index = i;
-            break;
-        }
-    }
-    window.localStorage.setItem('currentItem',JSON.stringify(index));
+    window.localStorage.setItem('currentItem',id);
 }
 function addEventsToSeeItem() {
     let selectProduct = document.getElementsByClassName("product");

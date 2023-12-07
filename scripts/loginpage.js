@@ -1,5 +1,6 @@
 
 import items from '../database/items.json' assert { type: 'json' };
+import admin from '../database/admin.json' assert {type: 'json'};
 
     
     const $ = (selector) => document.querySelector(selector);
@@ -17,9 +18,7 @@ import items from '../database/items.json' assert { type: 'json' };
     }
     const users = JSON.parse(window.localStorage.getItem('users'));
     console.log(users);
-
-
-   
+    
     
     
     const checkProcess = () => {
@@ -27,6 +26,12 @@ import items from '../database/items.json' assert { type: 'json' };
         const ac = $('#username')
         let acPass = false
         let pwPass = false
+
+        if(ac.value==admin.username&&pw.value==admin.password){
+            console.log("Admin login detected")
+            window.location.href="/New%20folder/admin/home_page/index.html";
+            return;
+        }
 
         if (ac.value  == ''){
             ac.nextElementSibling.textContent = "User Name is empty";
@@ -103,5 +108,5 @@ import items from '../database/items.json' assert { type: 'json' };
 
     
     document.addEventListener('DOMContentLoaded', () => {
-        document.querySelector('#submit').addEventListener('click', checkProcess);
+        document.querySelector('#submit').addEventListener('click',checkProcess);
           });
