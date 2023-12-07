@@ -1,11 +1,11 @@
 import { generateAd } from "./adGenerator.js";
-
+document.addEventListener('DOMContentLoaded', function() {
 window.onload = () => {
     generateAd();
     generateMessages();
     addEventsToDeleteBtns();
     addEventsToMsgTypes();
-}
+}})
 
 function removeMessage() {
     let element = this.parentElement.parentElement;

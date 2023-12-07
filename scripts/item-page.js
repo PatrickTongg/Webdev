@@ -1,10 +1,10 @@
 import items from '../database/items.json' assert { type: 'json' };
 import { generateAd } from './adGenerator.js';
-
+document.addEventListener('DOMContentLoaded', function() {
 window.onload = () => {
     loadItem();
     generateAd();
-}
+}})
 
 function loadItem() {
     let itemId = localStorage.getItem("currentItem");

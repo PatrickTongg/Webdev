@@ -1,12 +1,12 @@
 import { generateAd, imagesForItems } from "./adGenerator.js";
 
 let $ = (id) => {return document.getElementById(id)}
-
+document.addEventListener('DOMContentLoaded', function() {
 window.onload = () => {
     generateAd();
     $("upload-btn").addEventListener('click', uploadItem);
 
-}
+}})
 
 function uploadItem() {
     let items = JSON.parse(localStorage.getItem("items"));

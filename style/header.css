@@ -42,7 +42,10 @@ body {
     color: #FFF;
     margin: 1rem 0rem;
 }
-
+#user-icon{
+    width: 2rem;
+    height: 2rem;
+}
 .login {
     margin: 0rem 2rem;
 }

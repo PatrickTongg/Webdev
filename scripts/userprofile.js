@@ -104,12 +104,12 @@ function addEventsToSeeItem() {
 }
 
 //add function as onload and addlistener
+document.addEventListener('DOMContentLoaded', function() {
 window.onload = () => {
     createSoldItemList()
     createBuyItemList()
     createInfo()
     addEventsToSeeItem()
-    $("#editDetail").addEventListener("click", enableEdit);
-    // $$("done").addEventListener("click", doneEdit, false);
-}
-
+    $("#editDetail").addEventListener("click", enableEdit);}}
+    )
+    
