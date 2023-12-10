@@ -11,7 +11,7 @@ function changeToUserLogo(){
     if (user.username!=null){
         console.log(document.querySelector("#login-link").innerHTML);
 
-        let result ='<a href="/homepage/homepage.html"><img id="logoutIcon" class="topIcon" "src="/public/images/user-icon.png" alt="logout"></a>';
+        let result ='<a href="/homepage/homepage.html"><img id="logout-btn" class="topIcon" "src="/public/images/user-icon.png" alt="logout"></a>';
         result +='<a href="/login/userprofile.html">';
         result +='<img id="user-icon" class="topIcon"  src="/public/images/user-icon.png" alt="user"></a>';
         document.getElementById("login-link").innerHTML=result;
@@ -21,8 +21,12 @@ function changeToUserLogo(){
 function to_Login() {
     window.location = "/login/loginpage.html";
 }
+function to_Logout() {
+    window.location = "/homepage/homepage.html";
+}
 document.addEventListener('DOMContentLoaded', function() {
 
     document.querySelector('#login-btn').addEventListener('click', to_Login);
+    document.querySelector('#logout-btn').addEventListener('click', to_Login);
     window.onload = changeToUserLogo();
 });

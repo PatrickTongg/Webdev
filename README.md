@@ -1,7 +1,7 @@
 # Webdev
 ITC 5103 project
 Web Name: Revolve
-Introduction: It is a project that disaplay a demo of a online trading platform, 
+Introduction: It is a project that disaplay a demo of a online trading platform, where 
 
 
 
@@ -10,8 +10,8 @@ Vitaly
 [x] - Message Center
 [x] - Iteam info 
 [] - Upload Items
-Patrick
-
+##Patrick
+For the major of the 
 Lindga
 [x] - Home
 [x] - About us
