@@ -54,7 +54,7 @@
                     <div class="dtl-left"></div>
                     <div class="dtl-right"></div>
                         <div class="row-label">Title:</div>
-                        <input type="text" id="item-title" class="item-input dtl-stdrt-input" name="item-title" placeholder="Title">
+                        <input type="text" id="item-title" class="item-input dtl-stdrt-input" name="item-title" placeholder="Title" required>
                     
                         <div class="row-label">Description:</div>
                         <textarea rows="4" id="item-description" class="item-input" name="item-description" placeholder="Description"> </textarea>
@@ -64,7 +64,17 @@
                             <option value="brand-new">Brand-new</option>
                             <option value="good">Good</option>
                             <option value="bad">Bad</option>
-                        </select>  
+                        </select> 
+                        
+                        <div class="row-label">Features:</div>
+                        <div>
+                            <ul id="feature-list">
+                                <li class="ftrs">
+                                    <input type="text">
+                                    <input type="button" class="feature-add ftr-btn" value="+">
+                                </li>
+                            </ul>
+                        </div>
     
                         <div class="row-label">Images:</div>
                         <input type="file" class="" name="item-image">
@@ -79,7 +89,7 @@
     
                         <div class="row-label">Price:</div>
                         <div>
-                            <input id="item-price" type="number" class="item-input dtl-stdrt-input" name="item-price">
+                            <input id="item-price" type="number" class="item-input dtl-stdrt-input" name="item-price" required>
                             <span>$</span>
                         </div>
                         

@@ -16,6 +16,18 @@ main {
     justify-content: space-between;
 }
 
+#feature-list {
+    list-style: none;
+}
+
+.ftrs {
+    margin-bottom: 0.5rem;
+}
+
+.ftr-btn {
+    margin-left: 0.3rem;
+}
+
 @media only screen and (max-width: 500px) {
     .dtl-form {
         width: 25rem;
@@ -34,7 +46,7 @@ main {
 @media only screen and (min-width: 500px) {
     .dtl-form {
         width: 25rem;
-        height: 40rem;
+        /* height: 40rem; */
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 1rem 2rem
