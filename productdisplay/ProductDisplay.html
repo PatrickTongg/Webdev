@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="R icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="ProductDisplay.css">
-    <script src="/scripts/header.js"></script>
+    <link rel="stylesheet" href="../style/ProductDisplay.css">
+    <script defer src="../scripts/ProductDisplay.js"></script>
     <title>ProductDisplay</title>
 </head>
 
@@ -13,7 +13,7 @@
     <nav>
         <div class="navbar">
             <div class="dropdown">
-                <a href="homepage.html">Home</a>
+                <a href="../index.html">Home</a>
                 <div class="dropdown-content">
                     <a href="#">My Revolve</a>
                     <a href="#">Setting</a>
@@ -32,124 +32,143 @@
                 </div>
             </div>
             <div class="dropdown">
-            <a href="sports.html">Sports</a>
-            <div class="dropdown-content">
-                <a href="#">Sports Equipment</a>
-                <a href="#">Sports Gear</a>
-                <a href="#">Camping Gear</a>
-                <a href="#">Outdoor Adventure Equipment</a>
+                <a href="sports.html">Sports</a>
+                <div class="dropdown-content">
+                    <a href="#">Sports Equipment</a>
+                    <a href="#">Sports Gear</a>
+                    <a href="#">Camping Gear</a>
+                    <a href="#">Outdoor Adventure Equipment</a>
+                </div>
             </div>
-        </div>
-        <div class="dropdown">
-            <a href="books.html">Books</a>
-            <div class="dropdown-content">
-                <a href="#">Textbooks</a>
-                <a href="#">Novels</a>
-                <a href="#">Magazines</a>
-                <a href="#">Comic Books</a>
-                <a href="#">Study Guides</a>
+            <div class="dropdown">
+                <a href="books.html">Books</a>
+                <div class="dropdown-content">
+                    <a href="#">Textbooks</a>
+                    <a href="#">Novels</a>
+                    <a href="#">Magazines</a>
+                    <a href="#">Comic Books</a>
+                    <a href="#">Study Guides</a>
+                </div>
             </div>
-        </div>
-        <div class="dropdown">
-            <a href="fashion.html">Fashion</a>
-            <div class="dropdown-content">
-                <a href="#">Clothing</a>
-                <a href="#">Shoes</a>
-                <a href="#">Handbags</a>
-                <a href="#">Jewelry</a>
-                <a href="#">Perfume</a>
+            <div class="dropdown">
+                <a href="fashion.html">Fashion</a>
+                <div class="dropdown-content">
+                    <a href="#">Clothing</a>
+                    <a href="#">Shoes</a>
+                    <a href="#">Handbags</a>
+                    <a href="#">Jewelry</a>
+                    <a href="#">Perfume</a>
+                </div>
             </div>
-        </div>
-        <div class="dropdown">
-            <a href="electronics.html">Electronics</a>
-            <div class="dropdown-content">
-                <a href="#">Mobile Phones</a>
-                <a href="#">Laptops</a>
-                <a href="#">Earphones</a>
-                <a href="#">Cameras</a>
-                <a href="#">Gaming Consoles</a>
+            <div class="dropdown">
+                <a href="electronics.html">Electronics</a>
+                <div class="dropdown-content">
+                    <a href="#">Mobile Phones</a>
+                    <a href="#">Laptops</a>
+                    <a href="#">Earphones</a>
+                    <a href="#">Cameras</a>
+                    <a href="#">Gaming Consoles</a>
+                </div>
             </div>
-        </div>
-        <div class="dropdown">
-            <a href="toyshobbies.html">Toys & Hobbies</a>
-            <div class="dropdown-content">
-                <a href="#">Toys</a>
-                <a href="#">Games</a>
-                <a href="#">Musical Instruments</a>
-                <a href="#">Art Supplies</a>
+            <div class="dropdown">
+                <a href="toyshobbies.html">Toys & Hobbies</a>
+                <div class="dropdown-content">
+                    <a href="#">Toys</a>
+                    <a href="#">Games</a>
+                    <a href="#">Musical Instruments</a>
+                    <a href="#">Art Supplies</a>
+                </div>
             </div>
-        </div>
-        <div class="dropdown">
-            <a href="petsupplies.html">Pet Supplies</a>
-            <div class="dropdown-content">
-                <a href="#">Pet Food</a>
-                <a href="#">Pet Accessories</a>
-                <a href="#">Pet Toys</a>
-                <a href="#">Pet Shelter</a>
-                <a href="#">Pet Clothing</a>
+            <div class="dropdown">
+                <a href="petsupplies.html">Pet Supplies</a>
+                <div class="dropdown-content">
+                    <a href="#">Pet Food</a>
+                    <a href="#">Pet Accessories</a>
+                    <a href="#">Pet Toys</a>
+                    <a href="#">Pet Shelter</a>
+                    <a href="#">Pet Clothing</a>
+                </div>
             </div>
-        </div>
-        <div class="dropdown">
-            <a href="furnitures.html">Furnitures</a>
-            <div class="dropdown-content">
-                <a href="#">Bedroom Furniture</a>
-                <a href="#">Living Room Furniture</a>
-                <a href="#">Dining Room Furniture</a>
-                <a href="#">Kitchen Furniture</a>
-                <a href="#">Washroom Furniture</a>
+            <div class="dropdown">
+                <a href="furnitures.html">Furnitures</a>
+                <div class="dropdown-content">
+                    <a href="#">Bedroom Furniture</a>
+                    <a href="#">Living Room Furniture</a>
+                    <a href="#">Dining Room Furniture</a>
+                    <a href="#">Kitchen Furniture</a>
+                    <a href="#">Washroom Furniture</a>
+                </div>
             </div>
-        </div>
         </div>
     </nav>
     
     <main>
+        <div class="product-filters">
+            <label for="category-filter">Filter by:</label>
+            <select id="category-filter">
+                <option value="all">Phone</option>
+                <option value="electronics">Computer</option>
+                <option value="tablets">Tablet</option>
+                <option value="home">Peripheral</option>
+                <!-- Add more categories as needed -->
+            </select>
+    
+            <label for="sort-order">Sort by:</label>
+                <select id="sort-order">
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="date-asc">Newest</option>
+                    <option value="date-desc">Oldest</option>
+                </select>
+            </div>
+
         <div class="product-list">
-            <div class="product-item">
+            <div class="product-item" id="product1">
                 <img src="iPhone.jpg" alt="Product 1">
                 <div class="product-details">
                     <a href="#">iPhone 14 Pro - Excellent Condition</a><br>
-                    <span class="price">$900</span><br>
-                    <span class="publish-date">30 minutes ago</span>
+                    <span class="price" id="price1"></span><br>
+                    <span class="publish-date" id="date1"></span>
                 </div>
             </div> 
-            <div class="product-item">
+            <div class="product-item" id="product2">
                 <img src="Phone.jpg" alt="Product 2">
                 <div class="product-details">
                     <a href="#">Quality Used Android Smartphone - Like New</a><br>
-                    <span class="price">$300</span><br>
-                    <span class="publish-date">1 hour ago</span>
+                    <span class="price" id="price2"></span><br>
+                    <span class="publish-date" id="date2"></span>
                 </div>
             </div>  
-            <div class="product-item">
+            <div class="product-item" id="product3">
                 <img src="Mac.jpg" alt="Product 3">
                 <div class="product-details">
                     <a href="#">Used iMac in Excellent Condition - Must Sell</a><br>
-                    <span class="price">Please Contact</span><br>
-                    <span class="publish-date">2 hours ago</span>
+                    <span class="price" id="price3"></span><br>
+                    <span class="publish-date" id="date3"></span>
                 </div>
             </div>  
-            <div class="product-item">
+            <div class="product-item" id="product4">
                 <img src="iPad.jpg" alt="Product 4">
                 <div class="product-details">
                     <a href="#">Apple iPad Pro M1 5th generation</a><br>
-                    <span class="price">$1000</span><br>
-                    <span class="publish-date">16 hours ago</span>
+                    <span class="price" id="price4"></span><br>
+                    <span class="publish-date" id="date4"></span>
                 </div>
             </div>  
-            <div class="product-item">
+            <div class="product-item" id="product5">
                 <img src="Headphones.jpg" alt="Product 5">
                 <div class="product-details">
-                    <a href="#">High-Quality Wireless Headphones - Barely Used"</a><br>
-                    <span class="price">$180</span><br>
-                    <span class="publish-date">1 day ago</span>
+                    <a href="#">High-Quality Wireless Headphones - Barely Used</a><br>
+                    <span class="price" id="price5"></span><br>
+                    <span class="publish-date" id="date5"></span>
                 </div>
             </div>  
-            <div class="product-item">
+            <div class="product-item" id="product6">
                 <img src="Keyboard.jpg" alt="Product 6">
                 <div class="product-details">
                     <a href="#">High-Performance Mechanical Keyboard</a><br>
-                    <span class="price">$100</span><br>
-                    <span class="publish-date">2 days ago</span>
+                    <span class="price" id="price6"></span><br>
+                    <span class="publish-date" id="date6"></span>
                 </div>
             </div>             
         </div>
@@ -171,7 +190,7 @@
         </section>
         <section class="secondcolumn_location">
             <ul>
-                <li >Information</li>
+                <li>Information</li>
                 <li><a href="">Term of Use</a></li>
                 <li><a href="">Privacy Policy</a></li>
                 <li><a href="">Posting Policy</a></li>
@@ -180,13 +199,13 @@
         </section>
         <section class="thirdcolumn_location">
             <div class="row1_icon">
-                <img src="playstore.png" alt="Play Store">
-                <img src="apple-store.png" alt="apple-store">
+                <img src="../public/images/playstore.png" alt="Play Store">
+                <img src="../public/images/apple-store.png" alt="apple-store">
             </div>
             <div class="row2_icon">
-                <img src="Footer_FB.png" alt="facebook">
-                <img src="footer_IG.png" alt="instangram">
-                <img src="footer_twitter.png" alt="Twitter">
+                <img src="../public/images/Footer_FB.png" alt="facebook">
+                <img src="../public/images/footer_IG.png" alt="instangram">
+                <img src="../public/images/footer_twitter.png" alt="Twitter">
             </div>
         </section>
     </footer>
