@@ -10,10 +10,10 @@
             "Color: Black",
             "Memory: 128GB"
         ],
-        "images":["/public/images/iphones/iphone.png",
-        "/public/images/iphones/iphone1.png",
-        "/public/images/iphones/iphone2.jpeg",
-        "/public/images/iphones/iphone3.jpeg"]
+        "images":["public/images/iphones/iphone.png",
+        "public/images/iphones/iphone1.png",
+        "public/images/iphones/iphone2.jpeg",
+        "public/images/iphones/iphone3.jpeg"]
     },
     {
         "id":1,
@@ -24,7 +24,7 @@
             "Size: S, M, L, XL"
         ],
         "images":[
-            "/public/images/pants.png"
+            "public/images/pants.png"
         ]
     },
     {
@@ -39,7 +39,7 @@
             "Windows 11 Home"
         ],
         "images":[
-            "/public/images/laptop.png"
+            "public/images/laptop.png"
         ]
     },
     {
@@ -54,7 +54,7 @@
             "Video resolution: 1080p"
         ],
         "images":[
-            "/public/images/quadcopter.jpg"
+            "public/images/quadcopter.jpg"
         ]
     },
     {
@@ -69,7 +69,7 @@
             "Customizable Lighting"
         ],
         "images":[
-            "/public/images/smartLamp.jpg"
+            "public/images/smartLamp.jpg"
         ]
     },
     {
@@ -82,7 +82,7 @@
             "Color: Black"
         ],
         "images":[
-            "/public/images/dreamBoots.jpg"
+            "public/images/dreamBoots.jpg"
         ]
     },
     {
@@ -97,7 +97,7 @@
             "Customizable Lighting"
         ],
         "images":[
-            "/public/images/pelotonBike.jpg"
+            "public/images/pelotonBike.jpg"
         ]
     },
     {
@@ -112,7 +112,7 @@
             "Form factor: Pedestal"
         ],
         "images":[
-            "/public/images/radiator.jpg"
+            "public/images/radiator.jpg"
         ]
         
     }
