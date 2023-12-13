@@ -10,7 +10,7 @@ function createSoldItemList(){
     var result = '';
     for (let item of items){
         result += '<div class="product" id="'+item.id+'"><img class="productImage" src="'+item.images[0]+
-        '" alt='+item.name+'><a href="items/item-page.html" class="productLink">'+item.name+
+        '" alt='+item.name+'><a href="../items/item-page.html" class="productLink">'+item.name+
         '</a><div class="product_price">$'+item.price+'</div></div>';
     }
     soldItem.innerHTML += result; 
@@ -21,7 +21,7 @@ function createBuyItemList(){
     var result = '';
     for (let item of items){
         result += '<div class="product" id="'+item.id+'"><img class="productImage" src="'+item.images[0]+
-            '" alt='+item.name+'><a href="items/item-page.html" class="productLink">'+item.name+
+            '" alt='+item.name+'><a href="../items/item-page.html" class="productLink">'+item.name+
             '</a><div class="product_price">$'+item.price+'</div></div>';
     }
     buyItems.innerHTML += result; 
@@ -33,7 +33,7 @@ function createInfo(){
     var LoginUser = JSON.parse(window.localStorage.getItem('LoginUser'))
     let userInfoHTML = ''
     let userDetailHTML =''
-    userInfoHTML = ' <img class="icon_standard" src="public/images/profile_pic.png"alt="profile picture"><div><ul><li>User Name: '+LoginUser.username+
+    userInfoHTML = ' <img class="icon_standard" src="../public/images/profile_pic.png"alt="profile picture"><div><ul><li>User Name: '+LoginUser.username+
                     ' </li><li>Phone Number: '+LoginUser.phone+'</li></ul></div>'
     userDetailHTML=' <h1>Personal Details</h1><ul><li>Address: '+LoginUser.address+
                         '</li><li>Postal Code:'+LoginUser.postalCode+
