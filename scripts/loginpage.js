@@ -85,7 +85,7 @@ import admin from '../database/admin.json' assert {type: 'json'};
 
         if (acPass&&pwPass){
             sortLoginUserDataLocation();
-            location.href  = "/login/userprofile.html";
+            location.href  = "./login/userprofile.html";
         }
         }
 
