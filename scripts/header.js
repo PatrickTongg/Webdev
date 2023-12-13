@@ -19,7 +19,7 @@ function changeToUserLogo(){
 }
 
 function to_Login() {
-    window.location = "login/loginpage.html";
+    window.location = "../login/loginpage.html";
 }
 function to_Logout() {
     window.localStorage.removeItem('LoginUser');
