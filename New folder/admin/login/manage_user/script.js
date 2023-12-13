@@ -6,6 +6,32 @@ menu_btn.addEventListener('click', function(){
     mobile_menu.classList.toggle('is-active');
 });
 
+//menu
+menu_btn.addEventListener('click', function(){
+  menu_btn.classList.toggle('is-active');
+  mobile_menu.classList.toggle('is-active');
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const profilePic = document.getElementById('profilePic');
+  const dropdownContent = document.getElementById('dropdownContent');
+
+  profilePic.addEventListener('click', function() {
+    if (dropdownContent.style.display === 'block') {
+      dropdownContent.style.display = 'none';
+    } else {
+      dropdownContent.style.display = 'block';
+    }
+  });
+
+  // Hide the dropdown when clicking outside of it
+  window.addEventListener('click', function(event) {
+    if (!event.target.matches('#profilePic')) {
+      dropdownContent.style.display = 'none';
+    }
+  });
+});
+
 //fetching data from json file
 fetch('user.json')
 .then(response => response.json())
