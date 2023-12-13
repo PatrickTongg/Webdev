@@ -67,7 +67,7 @@ function generateMessages() {
         result += '</div>';
         result += '</div>';
         result += '<div class="delete">';
-        result += '<button class="delete-btn"><img class="delete-btn-img" src="/public/images/delete.png" alt="delete"></button>';
+        result += '<button class="delete-btn"><img class="delete-btn-img" src="../public/images/delete.png" alt="delete"></button>';
         result += '</div>';
         result += '</div>';
     }
