@@ -65,6 +65,42 @@ nav{
     margin-top: 0px;
 } */
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 9%;
+    left: 1356px;
+    z-index: 67;
+    /* display: none; */
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+}
+
+.dropdown-item {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem; 
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+
 /*-------------------------------nav bar---------------------------*/
 
 .options{
