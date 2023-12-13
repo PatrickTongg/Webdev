@@ -203,7 +203,7 @@ function checkform() {
 
     if (unameConfirm && pwConfirm && repwConfirm  && phoneConfirm && postalCodeConfirm && fnameConfirm && lnameConfirm && addressConfirm){
         updateUserToLocalStorage();
-        window.location = '/login/loginpage.html';
+        window.location = '../login/loginpage.html';
 
     }
 
