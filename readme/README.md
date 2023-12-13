@@ -7,7 +7,7 @@ Introduction: It is a project that display a demo of a online trading platform, 
 Vitaly
 [x] - Message Center
 [x] - Iteam info 
-[] - Upload Items
+[x] - Upload Items
 ##Patrick
 ##Webpage Created
 * Sign up Page
@@ -33,6 +33,30 @@ Vitaly
     * JS: /script/userprofile.js
     * Challenges:The javascript file on how to load a form with the user content while able to store the data after they press the button that created with javascript as event listener might be be able to the job. So using the onclick option to direct the the function is the solution, then it is needed to update both the user and login users storage as it correctly display the detail on both of the platform after the webpage is off.
     * ![GITHUB](/public/images/projectcaptue/userprofile.png)
+
+* Item Page
+    * Description: Page with item name, description, list of features, price, contact form and information. For each item stored in local storage generates different item page based on items' fields.
+    * HTML: /items/item-page.html
+    * CSS: /style/item-page.css
+    * JS: /script/item-page.js
+    * Challenges: Initially there was a JSON file with all the items and their properties, so the challenge was to fetch data from JSON file using imports, asserting file type and adding module attribute to src tag in html file.
+    * ![GITHUB](/public/images/projectcaptue/item-page.png)
+
+* Messenger Page
+    * Description: Messenger page where user can manage all his chats and delete items. All chats are connected to items in local storage and if the item is deleted in messenger it will be deleted in local storage too.
+    * HTML: /items/messenger.html
+    * CSS: /style/messenger.css
+    * JS: /script/messenger.js
+    * Challenges: The most challenging part was removing item not only from the html page, but from local storage. The approach of getting item index and deleting it directly from the array of items was not working, so for each html element of item was defined an id which was the same as items id. So when deleting item at first we get html id and then we delete item with the exact same id from local storage.
+    * ![GITHUB](/public/images/projectcaptue/messenger.png)
+
+* Upload item Page
+    * Description: An upload item page that helps user to upload new item. The item is pushed in local storage, therefore it can be displayed in users profile and on item page.
+    * HTML: /items/upload-item.html
+    * CSS: /style/upload-item.css
+    * JS: /script/upload-item.js
+    * Challenges: Majority of challenges were connected to building an object from users input and putting the new object to local storage.
+    * ![GITHUB](/public/images/projectcaptue/upload-item.png)
 
 * Footer Page
     * Desertion: Footer for the wbpages

@@ -29,7 +29,7 @@ import admin from '../database/admin.json' assert {type: 'json'};
 
         if(ac.value==admin.username&&pw.value==admin.password){
             console.log("Admin login detected")
-            window.location.href="/New%20folder/admin/home_page/index.html";
+            window.location.href="../New%20folder/admin/home_page/index.html";
             return;
         }
 
@@ -85,7 +85,7 @@ import admin from '../database/admin.json' assert {type: 'json'};
 
         if (acPass&&pwPass){
             sortLoginUserDataLocation();
-            location.href  = "/login/userprofile.html";
+            location.href="../login/userprofile.html";
         }
         }
 
