@@ -1,0 +1,143 @@
+body {
+    background: rgb(255, 255, 50);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8;
+}
+
+.btn {
+    background: rgb(28, 28, 28);
+    box-shadow: none;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: rgb(37, 37, 37);
+    color: #fff;
+}
+
+.btn:focus {
+    background: rgb(28, 28, 28);
+    box-shadow: none;
+    color: #fff;
+}
+
+.btn:active {
+    background: rgb(37, 37, 37);
+    box-shadow: none;
+    color: #fff;
+}
+
+
+.labels {
+    font-size: 11px;
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8;
+}
+
+.row1{
+    display: flex;
+    gap: 20px;
+}
+
+.container{
+    background-color: white;
+    height: 98vh;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding-left: 20px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.row{
+    display: grid;
+    grid-template:  150px / auto auto auto;
+    grid-template-columns:   267px 419px;;
+    padding: 30px;
+}
+
+.wrapper{
+    display: flex;
+    background-color: white;
+}
+
+.profile span{
+    font-weight: bold;
+}
+
+.name, .email{
+   text-align: center;
+}
+
+.lable{
+    padding-bottom: 10px;
+}
+
+.labels{
+    font-size: 13px;
+}
+
+input{
+    padding: 5px;
+}
+
+
+@media only screen and (max-width: 900px){
+    .row{
+        display: block;
+        padding: 0px;
+    }
+
+    .wrapper{
+        display: block;
+    }
+
+    .container{
+        background-color: white;
+        height: 110vh;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border-radius: 20px;
+        padding-left: 0px;
+        width: 90%;
+        margin-left: 6%;
+    }
+
+    .profile img{
+        width: 36%;
+    }
+
+    .profile{
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .row, .row1, .row2{
+        padding-left: 10px;
+    }
+
+    .btn{
+        text-align: center;
+    }
+
+    .btn1{
+        padding-left: 95px;
+    }
+}

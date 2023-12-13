@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,500" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="css/home_style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <!-- <div class="logo">
+                <img src="../assets/logo.png" alt="">
+            </div> -->
+            <div class="profile_picture_head">
+                <div class="dropdown">
+                    <!-- <a href="../profile/profile.html"><img src="../assets/ben-sweet-2LowviVHZ-E-unsplash.jpg" alt=""></a> -->
+                    <img src="../assets/ben-sweet-2LowviVHZ-E-unsplash.jpg" alt="" id="profilePic">
+                    <div class="dropdown-content" id="dropdownContent">
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            Messages
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            Settings
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="../../../New folder/admin/login/login.html">
+                            Log Out
+                        </a>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="standard">
+        <div id="profile_info">
+            <div class="profile_picture">
+                <img src="../assets/ben-sweet-2LowviVHZ-E-unsplash.jpg" alt="">
+            </div>
+            <div class="admin_name">
+                <a href="../profile/profile.html"><p>Pranav Panchal</p></a>
+                <span>Admin</span>
+            </div>
+        </div>
+        <div class="options">
+            <div class="home">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="../manage_user/manage_user.html">Manage Users</a></li>
+                    <li><a href="../manage_feedback/manage_feedback.html">Manage Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+    </div>
+
+    <nav class="mobile-nav">
+        <!-- <div class="mobile-logo">
+            <img src="../assets/logo.png" alt="">
+        </div> -->
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="../manage_user/manage_user.html">Manage Users</a></li>
+            <li><a href="../manage_feedback/manage_feedback.html">Manage Feedback</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="card">
+            <div class="charts">
+                <canvas id="myChart1"></canvas>
+                <canvas id="myChart2"></canvas>
+            </div>
+        </div>
+
+        <div class="card2">
+            <div class="chart">
+                <div class="slides">
+                    <p>Downloads Trend</p>
+                    <canvas id="lineChart" style="width:50%;max-width:600px"></canvas>
+                </div>
+                <div class="slides">
+                    <p>Purchase premium Trend</p>
+                    <canvas id="lineChart2" style="width:50%;max-width:600px"></canvas>
+                </div>
+                <div class="slides">
+                    <p>Last year new users</p>
+                    <canvas  id="lineChart3" style="width:50%;max-width:600px"></canvas>
+                </div>
+                <button class="btn1" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="btn2" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+        </div>
+
+        
+    </main>
+    <footer>
+        <div class="footer">
+            copyright &copy 2023 
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
