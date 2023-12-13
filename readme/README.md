@@ -4,10 +4,6 @@ Web Name: Revolve
 Introduction: It is a project that display a demo of a online trading platform, where we can communicate and performing 2 hand purchase individually. We focus on the main page, items, interaction with users, login, sighup, user profile and admin controlling feature of the platform. 
 
 #Job Allocation/Page Created
-Vitaly
-[x] - Message Center
-[x] - Iteam info 
-[x] - Upload Items
 ##Patrick
 ##Webpage Created
 * Sign up Page
@@ -33,7 +29,8 @@ Vitaly
     * JS: /script/userprofile.js
     * Challenges:The javascript file on how to load a form with the user content while able to store the data after they press the button that created with javascript as event listener might be be able to the job. So using the onclick option to direct the the function is the solution, then it is needed to update both the user and login users storage as it correctly display the detail on both of the platform after the webpage is off.
     * ![GITHUB](/public/images/projectcaptue/userprofile.png)
-
+##Vitaly
+##Webpage Created
 * Item Page
     * Description: Page with item name, description, list of features, price, contact form and information. For each item stored in local storage generates different item page based on items' fields.
     * HTML: /items/item-page.html
