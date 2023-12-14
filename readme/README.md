@@ -7,14 +7,15 @@ Introduction: It is a project that display a demo of a online trading platform, 
 ##Patrick
 ##Webpage Created
 * Sign up Page
-    * Description: A sign up page which will check and store user data into a local storage which can be used in other pages. Animation with the introduction of the platform is also shown. 
+    * Description: A sign up page which will check and store user data into a local storage which can be used in other pages. Animation with the introduction of the p
+latform is also shown. 
     * HTML: /login/signup.html
     * CSS: /style/login/signup.css
     * JS: /script/signup.js 
     * Challenges: Majority of the challenge is to construct a form for the sign up page and create different constrain base on the pages the need of the certain information, which might need multiple checker to perform, the second problem is to  insert the user data into the local Storage while not interfering with the existing data, using loading function on the login page I manage to import all the items/user detail from the JSON if there are none, the function will create a empty key and array to allow the form to input the function. Lastly is the slider to make the words and image appear and disappear using fade animation.
     * ![GITHUB](/public/images/projectcaptue/SignUp.png)
 
-* Login Page
+* Login Page:
     * Description: A login page that read the local storage and grant access to the user with his/her information stored as a login user, also it act as the portal to login to the admin center.
     * HTML: /login/loginpage.html
     * CSS: /style/login/loginpage.css
