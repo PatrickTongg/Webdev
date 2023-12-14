@@ -179,6 +179,11 @@ td a{
     padding: 10px;
     text-align: center;
 }
+.mobile-container{
+    display: none;
+    margin-top: 20px;
+    height: 557px;
+}
 
 th{
     background-color: #fff;
@@ -369,6 +374,7 @@ td{
         width: 100%;
     }
     .mobile-container{
+        display: block;
         margin-top: 20px;
         height: 557px;
     }
