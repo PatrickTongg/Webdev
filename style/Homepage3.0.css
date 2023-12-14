@@ -15,7 +15,7 @@ a {
 
 /* Styles for the top bar section */
 .top-bar {
-    height: 400px;
+    height: 450px;
     background:linear-gradient(-30deg,#F8CF01 88%, black 100%);
     display: flex;
     justify-content: center;
@@ -24,34 +24,32 @@ a {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Styles for the logo within the top bar */
-.logo img {
-    max-height: 200px;
-    margin: 0 auto;
-}
-
 /* Styles for the narrow top bar section */
 .narrow-top-bar {
+    display: flex;
+    justify-content: right;
+    height: 35px;
     background-color: rgba(0, 0, 0, 0.729);
-    color: #fff;
+    color: #29282B;
     padding: 0px 0;
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    right: 0;   
+}
 
-    .image-container {
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-        right: 20px;
-        gap: 12px;
-      }
-      
-      .image-container img {
-        max-width: 25px;
-        height: auto;
-      }
+.login-button {
+    background-color: #F8CF01;
+    color: #29282b;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.login-button:hover {
+    background-color: #fff4d160;
 }
 
 /* Styles for the search box part */
@@ -63,7 +61,7 @@ a {
     padding: 10px 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
-    left: 70px;
+    left: 240px;
 }
 
 .search-box {
@@ -125,7 +123,7 @@ a {
     min-width: 160px;
     box-shadow: 0px 12px 16px 0px rgba(0,0,0,0.2);
     border-radius:10px;
-    top:450px;
+    top:500px;
 }
 
 .dropdown-content a {
