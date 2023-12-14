@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let targetKeywordLower = targetKeyword.toLowerCase();
 
         if (searchTermLower === targetKeywordLower) {
-            let localFilePath = `../productdisplay/ProductDisplayDraft.html`;
+            let localFilePath = `../productdisplay/ProductDisplay.html`;
             window.location.href = localFilePath;
         }        
     }
