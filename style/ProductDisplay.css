@@ -85,7 +85,7 @@ a {
 
 /* Style for the "Sort by" select element */
 #sort-order {
-    margin-top: 10px; /* 为了将其置于"Filter by"下方 */
+    margin-top: 10px;
 }
 
 
@@ -113,12 +113,12 @@ a {
     outline: none;
 }
 
-/* 悬停效果 */
+/* hover effect */
 #category-filter:hover {
     border-color: #888;
 }
 
-/* 焦点效果 */
+/* focus effect */
 #category-filter:focus {
     border-color: #555;
 }
@@ -171,7 +171,7 @@ a {
     color:#29282b;
 }
 
-/* 按钮样式 */
+/* button*/
 #join-button {
     display:inline-block;
     background-color: #29282B;
