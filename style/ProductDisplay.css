@@ -1,5 +1,5 @@
 body {
-    background-color: #fff4d160;
+    background-color:#fcefb021;
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -69,6 +69,139 @@ a {
     margin: 0;
     padding: 0;
 }
+
+/* Styles for the product filters */
+.product-filters {
+    display: flex;
+    flex-direction: column; /* 将元素纵向排列 */
+    align-items: flex-start; /* 左对齐 */
+    background-color: #29282B;
+    padding: 10px;
+}
+
+.product-filters label, .product-filters select {
+    margin-bottom: 10px; /* 为了在元素之间留出一些间距 */
+}
+
+/* Style for the "Sort by" select element */
+#sort-order {
+    margin-top: 10px; /* 为了将其置于"Filter by"下方 */
+}
+
+
+/* Style for the options within the selects */
+.product-filters select option {
+    font-weight: normal;
+    color: #333;
+}
+
+/* Style for hover and focus effects on selects */
+.product-filters select:hover,
+.product-filters select:focus {
+    border-color: #555;
+}
+
+#category-filter {
+    background-color: #f1f1f1; /* 背景色 */
+    color: #333; /* 字体颜色 */
+    padding: 8px 10px; /* 内边距 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 4px; /* 圆角 */
+    font-family: Arial, sans-serif; /* 字体 */
+    font-size: 14px; /* 字体大小 */
+    cursor: pointer; /* 鼠标样式 */
+    outline: none; /* 移除焦点边框 */
+}
+
+/* 悬停效果 */
+#category-filter:hover {
+    border-color: #888;
+}
+
+/* 焦点效果 */
+#category-filter:focus {
+    border-color: #555;
+}
+
+#sort-order {
+    background-color: #f1f1f1; /* 背景色 */
+    color: #333; /* 字体颜色 */
+    padding: 8px 10px; /* 内边距 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 4px; /* 圆角 */
+    font-family: Arial, sans-serif; /* 字体 */
+    font-size: 14px; /* 字体大小 */
+    cursor: pointer; /* 鼠标样式 */
+    outline: none; /* 移除焦点边框 */
+}
+
+/* 悬停效果 */
+#sort-order:hover {
+    border-color: #888;
+}
+
+/* 焦点效果 */
+#sort-orderr:focus {
+    border-color: #555;
+}
+
+
+
+/* 左侧广告条幅 */
+.vertical-ad.left-ad {
+    position:absolute;
+    top: 38px; /* 从页面顶部开始固定 */
+    left: 0; /* 左侧固定 */
+    width: 200px; /* 设置广告宽度 */
+    height: 1770px; /* 设置广告高度，这将铺满整个视口高度 */
+    background-color:#29282B; /* 设置背景颜色 */
+    padding: 20px; /* 添加内边距以包含内容 */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:x-large;
+    font-weight:600;
+    color: #FFF;
+}
+
+/* 右侧广告条幅 */
+.vertical-ad.right-ad {
+    position: absolute;
+    top: 38px; /* 从页面顶部开始固定 */
+    right: 0; /* 右侧固定 */
+    width: 200px; /* 设置广告宽度 */
+    height: 1770px; /* 设置广告高度，这将铺满整个视口高度 */
+    background-color:#f8cf01bd; /* 设置背景颜色 */
+    padding: 20px; /* 添加内边距以包含内容 */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:xx-large;
+    font-weight:600;
+    color:#29282b;
+}
+
+* 按钮样式 */
+.button {
+    display:inline-block;
+    background-color: #29282B;
+    color:#F8CF01;
+    padding: 10px 20px;
+    margin-top:15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* 按钮 hover 效果 */
+.button:hover {
+    background-color: red; /* 鼠标悬停时变为红色 */
+}
+
+
+.slogan-image {
+    width: 240px; /* 调整宽度 */
+    height: 655px; /* 调整高度 */
+    margin-left: -20px; /* 向左移动 20 像素 */
+}
+
 
 .product-list {
     display: flex;

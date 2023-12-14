@@ -190,31 +190,31 @@ img {
 
 #feedback-form {
     text-align: center;
-    margin: 20px auto; /* 居中 */
-    max-width: 600px; /* 设置最大宽度，可以根据需要调整 */
+    margin: 20px auto;
+    max-width: 600px;
 }
 
 #user-feedback-form {
-    font-family: 'Arial', sans-serif; /* 修改字体 */
-    color: #333; /* 修改颜色 */
-    margin-top: 20px; /* 设置上边距 */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-top: 20px;
 }
 
 label {
-    display: block; /* 将标签显示为块级元素，使其单独占一行 */
-    margin-bottom: 8px; /* 设置下边距 */
+    display: block;
+    margin-bottom: 8px;
 }
 
 input, textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 12px;
-    box-sizing: border-box; /* 防止宽度溢出 */
+    box-sizing: border-box;
 }
 
 button {
-    background-color: #4CAF50; /* 设置背景颜色 */
-    color: white; /* 设置文字颜色 */
+    background-color: #4CAF50;
+    color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
@@ -222,7 +222,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049; /* 设置鼠标悬停时的背景颜色 */
+    background-color: #45a049;
 }
 
 h3, p {

@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Mock data for product details
     const productDetails = [
-        { id: "product1", category: "electronics", price: "$900", date: new Date("2023-12-10T12:00:00"), imageSrc: "iPhone.jpg", imageAlt: "iPhone"},
-        { id: "product2", category: "electronics", price: "$300", date: new Date("2023-12-10T11:55:00"), imageSrc: "Phone.jpg", imageAlt: "Phone"},
-        { id: "product3", category: "computers", price: "Please Contact", date: new Date("2023-12-10T08:30:00"), imageSrc: "Mac.jpg", imageAlt: "Mac"},
-        { id: "product4", category: "tablets", price: "$1000", date: new Date("2023-12-09T12:00:00"), imageSrc: "iPad.jpg", imageAlt: "iPad"},
-        { id: "product5", category: "electronics", price: "$180", date: new Date("2023-12-08T08:00:00"), imageSrc: "Headphones.jpg", imageAlt: "HeadPhones"},
-        { id: "product6", category: "peripherals", price: "$100", date: new Date("2023-12-05T12:00:00"), imageSrc: "Keyboard.jpg", imageAlt: "Keyboard"}
+        { id: "product1", category: "electronics", price: "$900", date: new Date("2023-12-10T12:00:00"), imageSrc: "../public/images/iPhone.jpg", imageAlt: "iPhone", name: "iPhone 14 Pro - Excellent Condition"},
+        { id: "product2", category: "electronics", price: "$300", date: new Date("2023-12-10T11:55:00"), imageSrc: "../public/images/Phone.jpg", imageAlt: "Phone", name: "Quality Used Android Smartphone - Like New"},
+        { id: "product3", category: "computers", price: "Please Contact", date: new Date("2023-12-10T08:30:00"), imageSrc: "../public/images/Mac.jpg", imageAlt: "Mac", name: "Used iMac in Excellent Condition - Must Sell"},
+        { id: "product4", category: "tablets", price: "$1000", date: new Date("2023-12-09T12:00:00"), imageSrc: "../public/images/iPad.jpg", imageAlt: "iPad", name: "Apple iPad Pro M1 5th generation"},
+        { id: "product5", category: "electronics", price: "$180", date: new Date("2023-12-08T08:00:00"), imageSrc: "../public/images/Headphones.jpg", imageAlt: "HeadPhones", name: "High-Quality Wireless Headphones - Barely Used"},
+        { id: "product6", category: "peripherals", price: "$100", date: new Date("2023-12-05T12:00:00"), imageSrc: "../public/images/Keyboard.jpg", imageAlt: "Keyboard", name: "High-Performance Mechanical Keyboard"}
     ];
 
     const productContainer = document.querySelector('.product-list');
@@ -49,7 +49,7 @@ const sortedProducts = filteredProducts.sort((a, b) => {
 
             const productName = document.createElement('a');
             productName.href = '#';
-            productName.textContent = 'Product Name';
+            productName.textContent = product.name;
             productDetails.appendChild(productName);
 
             const productPrice = document.createElement('span');
