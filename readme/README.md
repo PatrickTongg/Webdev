@@ -81,6 +81,7 @@ Lindga
 * manage user page:
     * Description:  In this page I have actually used JSON file to render the all the user name and data into that page.
                     with the help of JS I have done block/unblock button, delete button.
+    * Challenge:    Initially the data was not into JSON file, I have created div for every users in order to show it into browser.          However, Now I hve used JSON to render data dynamically and while making the file I got some difficulty to radndering the data
     * ![GITHUB](/public/images/projectcaptue/admin-manage-user.png)
 
 * manage feedback/inquiry:
