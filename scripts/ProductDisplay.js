@@ -22,8 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Sort products based on order
 const sortedProducts = filteredProducts.sort((a, b) => {
-    if (order === 'price-asc') return parseFloat(a.price) - parseFloat(b.price);
-    if (order === 'price-desc') return parseFloat(b.price) - parseFloat(a.price);
     if (order === 'date-desc') return a.date - b.date;
     if (order === 'date-asc') return b.date - a.date;
 });
