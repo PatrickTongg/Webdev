@@ -66,7 +66,32 @@ Lindga
 [x] - Home
 [x] - About us
 [x] - catoegory items
-Pravo
-[] - user list page
-[] - feedback page
-[] - User managmnet page 
+
+##Pranav
+
+* login page:
+    * Description: in this page we have used login for ADMIN as well as USER. the id and password is stored in to a localstorage.
+    * ![GITHUB](/public/images/projectcaptue/admin-login.png)
+
+* Home page:
+    * Description:  In this page I have used chart.js in order to show the chart in different ways
+                    the bottom chart has a slider as well. when the user clicks on that button it slides
+    * ![GITHUB](/public/images/projectcaptue/admin-home.png)
+
+* manage user page:
+    * Description:  In this page I have actually used JSON file to render the all the user name and data into that page.
+                    with the help of JS I have done block/unblock button, delete button.
+    * Challenge:    Initially the data was not into JSON file, I have created div for every users in order to show it into browser.          However, Now I hve used JSON to render data dynamically and while making the file I got some difficulty to radndering the data
+    * ![GITHUB](/public/images/projectcaptue/admin-manage-user.png)
+
+* manage feedback/inquiry:
+    * Description: In this page I have used table to format all the details and used reply button with is goes into another page that
+                    is replying page.
+    * ![GITHUB](/public/images/projectcaptue/admin-manage-feedback.png)
+    * ![GITHUB](/public/images/projectcaptue/feedback-reply.png)
+
+* hamburger menu:
+    * Description:  for the mobile view application, I have made a hamburger menu in order to navigae on page to the other.
+                    For that I have used JS to run it and used css to display when the mobile view is opend.
+    * ![GITHUB](/public/images/projectcaptue/hamburger.png)
+
