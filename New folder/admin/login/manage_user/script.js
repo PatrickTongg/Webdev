@@ -69,31 +69,31 @@ fetch('user.json')
         }
       });
 
-    const updateIcon = document.createElement('i');
-    updateIcon.classList.add('fas', 'fa-sync', 'icon'); // Add 'icon' class for styling
-    updateIcon.title = 'Update';
+  const updateIcon = document.createElement('i');
+  updateIcon.classList.add('fas', 'fa-sync', 'icon'); // Add 'icon' class for styling
+  updateIcon.title = 'Update';
 
-    const deleteIcon = document.createElement('i');
-    deleteIcon.classList.add('fas', 'fa-trash-alt', 'icon'); // Add 'icon' class for styling
-    deleteIcon.title = 'Delete';
+  const deleteIcon = document.createElement('i');
+  deleteIcon.classList.add('fas', 'fa-trash-alt', 'icon'); // Add 'icon' class for styling
+  deleteIcon.title = 'Delete';
 
-    deleteIcon.addEventListener('click', (event) => {
-      const clickedCustomerDiv = event.target.closest('.customer');
-      clickedCustomerDiv.style.transition = 'opacity 1s, background-color 1s';
-      clickedCustomerDiv.style.opacity = '0';
-      setTimeout(() => {
-        clickedCustomerDiv.remove();
-      }, 1000); // Change the timing if needed
-    });
-
-    // Append icons to the icon-group container
-    iconGroup.appendChild(blockIcon);
-    iconGroup.appendChild(updateIcon);
-    iconGroup.appendChild(deleteIcon);
-
-    customerDiv.appendChild(iconGroup);
-    profilePicturesContainer.appendChild(customerDiv);
+  deleteIcon.addEventListener('click', (event) => {
+    const clickedCustomerDiv = event.target.closest('.customer');
+    clickedCustomerDiv.style.transition = 'opacity 1s, background-color 1s';
+    clickedCustomerDiv.style.opacity = '0';
+    setTimeout(() => {
+      clickedCustomerDiv.remove();
+    }, 1000); // Change the timing if needed
   });
+
+  // Append icons to the icon-group container
+  iconGroup.appendChild(blockIcon);
+  iconGroup.appendChild(updateIcon);
+  iconGroup.appendChild(deleteIcon);
+
+  customerDiv.appendChild(iconGroup);
+  profilePicturesContainer.appendChild(customerDiv);
+});
 });
 
  // Create icons for edit, update, and delete

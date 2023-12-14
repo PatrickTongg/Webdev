@@ -226,17 +226,6 @@ button{
 
 
 /*-------------------------------------------------------------*/
-/* 
-.profile_picture_head {
-    width: 55px;
-    height: 55px;
-    float: right;
-    border: 1px solid transparent;
-    background-color: blanchedalmond;
-    border-radius: 50px;
-    margin-right: 20px;
-    margin-top: 6px;
-} */
 
 .profile_picture_head img{
     width: 55px;
