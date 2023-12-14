@@ -87,3 +87,14 @@ productDetails.appendChild(productDate);
     // Initial render on page load
     renderProducts('all', 'date-desc');
 });
+
+// 获取按钮元素
+const joinButton = document.getElementById('join-button');
+
+// 添加点击事件监听器
+joinButton.addEventListener('click', function() {
+    // 在此处设置要跳转到的URL
+    const url = '../login/loginpage.html'; // 替换为您想要链接的URL
+    // 执行跳转
+    window.location.href = url;
+});

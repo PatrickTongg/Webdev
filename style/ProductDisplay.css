@@ -172,7 +172,7 @@ a {
 }
 
 /* 按钮样式 */
-.button {
+#join-button {
     display:inline-block;
     background-color: #29282B;
     color:#F8CF01;
@@ -184,8 +184,9 @@ a {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.button:hover {
-    background-color: red;
+#join-button:hover {
+    background-color: #f8cf0120;
+    color:#29282B;
 }
 
 .slogan-image {
