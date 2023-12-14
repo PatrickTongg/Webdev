@@ -363,16 +363,28 @@ footer section li {
     }
 }
 
-@media (max-width: 767px) {
-    .navbar {
-        display: block;
-        text-align: center;
-        padding: 10px;
+/* Media query for small screens */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
     }
 
-    .footer {
-        display: flex;
+    .navbar {
         flex-direction: column;
         align-items: center;
+    }
+
+    .navbar .dropdown {
+        width: 100%;
+    }
+
+    .header-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 }
