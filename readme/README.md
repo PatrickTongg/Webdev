@@ -62,11 +62,31 @@ latform is also shown.
     * HTML: /footer/ footer.html
     * CSS : /style/footer.css
 
-For the major of the 
-Lindga
-[x] - Home
-[x] - About us
-[x] - catoegory items
+##Lingda
+##Webpage Created
+* Homepage:
+    * Description: Explore this secondhand shopping site's homepage, built using HTML, CSS, and JavaScript. It includes essential elements like a header, search bar, navigation, images, buttons, and click interactions. The search bar and image carousel with arrow navigation are implemented using JavaScript for enhanced functionality. Discover a straightforward and user-friendly design, providing a seamless browsing experience for secondhand treasures. Additionally, the page is optimized for mobile devices. 
+    * HTML: /index.html
+    * CSS: /style/Homepage3.0.css
+    * JS: /scripts/Homepage3.0.js
+    * Challenges: JavaScript functionality implementation: slides, search box results. Page linking.
+    * ![GITHUB](/public/images/projectcaptue/Homgepage.png)
+
+* About us Page:
+    * Description: This "About us" page for a second-hand shopping website conveys the site's founding philosophy. Combining HTML, CSS, and JavaScript, it features a responsive design with a navigation bar, images, descriptive text, a trade button, and a footer embellished with icons for enhanced aesthetics. Additionally, the page is optimized for mobile devices.
+    * HTML: /aboutus/About us2.0.html
+    * CSS: /style/About us2.0.css
+    * JS: /scripts/About us2.0.js
+    * Challenges: Form function. Page layout.
+    * ![GITHUB](/public/images/projectcaptue/About-us.png)
+
+* Product Display Page:
+    * Description: This page showcases a range of pre-owned electronic goods posted by sellers. Developed using HTML, CSS, and JavaScript, it presents a straightforward design with a navbar, listings comprising text and images, and a footer. Implemented with JavaScript, this page features convenient filter and sorting options, facilitating the exploration of electronic items. Additionally, the page is optimized for mobile devices.
+    * HTML: /productdisplay/ProductDisplay.html
+    * CSS: /style/ProductDisplay.css
+    * JS: /scripts/ProductDisplay.js
+    * Challenges: JavaScript functionality implementation: filter by and sort by function.
+    * ![GITHUB](/public/images/projectcaptue/Product-Display.png)
 
 ##Pranav
 
